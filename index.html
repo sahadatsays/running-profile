@@ -23,48 +23,62 @@
         <span>Sahadat<span style="color:var(--blue-2)">.</span></span>
       </a>
       <ul class="nav__links">
-        <li><a href="#stats">Stats</a></li>
-        <li><a href="#featured">Featured</a></li>
-        <li><a href="#bests">Bests</a></li>
-        <li><a href="#races">Long runs</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="index.html" data-nav="profile"><span data-icon="runner"></span>Profile</a></li>
+        <li><a href="runs.html" data-nav="history"><span data-icon="list"></span>Run history</a></li>
+        <li><a href="index.html#season"><span data-icon="target"></span>Season</a></li>
+        <li><a href="gallery.html" data-nav="gallery"><span data-icon="grid"></span>Gallery</a></li>
       </ul>
-      <a href="#contact" class="btn btn--primary">Get in touch
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
+      <a href="#contact" class="btn btn--primary btn--magnetic">Get in touch <span data-icon="arrowRight"></span></a>
       <button class="nav__toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
     </div>
   </header>
 
   <main>
     <!-- ================= HERO ================= -->
-    <section class="hero">
+    <section class="hero hero--v2">
       <div class="hero__bg"></div>
       <div class="hero__grid-lines"></div>
+      <svg class="hero__route" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <linearGradient id="heroRouteGrad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#3d6bff" stop-opacity="0" />
+            <stop offset=".45" stop-color="#3d6bff" />
+            <stop offset="1" stop-color="#ff4d2e" />
+          </linearGradient>
+        </defs>
+        <path id="heroRoutePath" class="hero__route-ghost" d="M-60,760 C140,690 240,830 420,720 S620,430 780,520 S1000,780 1120,590 S1290,250 1500,300" />
+        <path class="hero__route-line" pathLength="1" d="M-60,760 C140,690 240,830 420,720 S620,430 780,520 S1000,780 1120,590 S1290,250 1500,300" />
+        <g class="hero__route-km">
+          <circle cx="420" cy="720" r="5" /><circle cx="780" cy="520" r="5" /><circle cx="1120" cy="590" r="5" />
+        </g>
+        <g class="hero__route-runner">
+          <circle r="22" class="glow" /><circle r="7" class="core" />
+          <animateMotion dur="18s" begin="2.8s" repeatCount="indefinite" calcMode="linear" path="M-60,760 C140,690 240,830 420,720 S620,430 780,520 S1000,780 1120,590 S1290,250 1500,300" />
+        </g>
+      </svg>
 
       <div class="container">
         <div class="hero__inner">
-          <div>
+          <div class="hero__copy">
             <span class="hero__status"><i class="pulse"></i> <span data-bind="latestRun">Training for the next ultra</span></span>
 
             <h1 class="display hero__title">
               <span class="line"><span>Sahadat</span></span>
-              <span class="line"><span class="outline">Hossain</span></span>
+              <span class="line"><span class="outline outline--animated">Hossain</span></span>
             </h1>
 
             <div class="hero__meta">
-              <span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 1 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
-                Dhaka, Bangladesh
-              </span>
-              <span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 4a2 2 0 1 0 0-.01M7 21l3-6 3 2v4M10 15l1-5 4 3h3M8 10l3-2"/></svg>
-                Ultra &amp; Trail Runner
-              </span>
-              <span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l6-6 4 4 8-8M14 7h7v7"/></svg>
-                <span data-bind="heroLongest">Ultra finisher</span>
-              </span>
+              <span><span data-icon="pin"></span>Dhaka, Bangladesh</span>
+              <span><span data-icon="runner"></span>Ultra &amp; Trail Runner</span>
+              <span><span data-icon="trophy"></span><span data-bind="heroLongest">Ultra finisher</span></span>
+            </div>
+
+            <div class="odometer-block">
+              <div class="odometer" id="heroOdometer" aria-label="Total distance">0</div>
+              <div class="odometer-block__unit">
+                <b>KM</b>
+                <span data-bind="heroSince">logged</span>
+              </div>
             </div>
 
             <p class="hero__quote">
@@ -72,20 +86,19 @@
             </p>
 
             <div class="hero__cta">
-              <a href="#races" class="btn btn--primary">View long runs
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-              </a>
-              <a href="gallery.html" class="btn">Photo gallery</a>
+              <a href="runs.html" class="btn btn--primary btn--magnetic"><span data-icon="list"></span>Every run <span data-icon="arrowRight"></span></a>
+              <a href="#season" class="btn btn--magnetic"><span data-icon="target"></span>The season</a>
             </div>
           </div>
 
           <div class="hero__visual">
-            <div class="hero__photo">
+            <div class="hero__photo hero__photo--arch" data-tilt="10">
               <img src="assets/img/00005-800.jpg"
                    srcset="assets/img/00005-800.jpg 800w, assets/img/00005-1800.jpg 1365w"
                    sizes="(max-width: 900px) 90vw, 480px"
                    width="800" height="1200"
                    alt="Sahadat Hossain at the Sylhet Ultra Trail wearing bib 707" />
+              <span class="hero__shine"></span>
               <div class="hero__photo-caption">
                 <div>
                   <span class="label">Sylhet Ultra Trail</span>
@@ -95,45 +108,61 @@
               </div>
             </div>
 
+            <div class="hero__badge" aria-hidden="true">
+              <svg viewBox="0 0 200 200">
+                <defs><path id="badgeCircle" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0" /></defs>
+                <text><textPath href="#badgeCircle" id="heroBadgeText">ULTRA RUNNER • DHAKA • ONE STEP AT A TIME •</textPath></text>
+              </svg>
+              <span class="hero__badge-core" data-icon="runner"></span>
+            </div>
+
             <div class="chip chip--a">
-              <span class="chip__icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4zM17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg>
-              </span>
+              <span class="chip__icon" data-icon="trophy"></span>
               <div><strong data-bind="chipLongestKm">—</strong><small data-bind="chipLongestName">Longest run</small></div>
             </div>
 
             <div class="chip chip--b chip--fire">
-              <span class="chip__icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c4 0 7-3 7-7 0-5-5-6-4-11-3 1-6 4-6 8-1-1-2-2-2-4-2 2-2 4-2 7 0 4 3 7 7 7z"/></svg>
-              </span>
+              <span class="chip__icon" data-icon="flame"></span>
               <div><strong data-bind="chipLast30">—</strong><small>Last 30 days</small></div>
             </div>
           </div>
         </div>
 
+        <div class="hero__ecg" aria-hidden="true">
+          <div class="hero__ecg-line"></div>
+          <span class="hero__ecg-label"><span class="beat" data-icon="heart"></span><b data-bind="heroAvgHr">—</b> average heart rate</span>
+        </div>
+
         <div class="stats-strip">
           <div class="stat reveal">
+            <span class="stat__icon" data-icon="distance"></span>
             <div class="stat__value"><span data-count-key="totalKm">0</span><sup>KM</sup></div>
             <span class="label">Distance logged</span>
           </div>
           <div class="stat reveal" data-delay="1">
+            <span class="stat__icon" data-icon="shoe"></span>
             <div class="stat__value"><span data-count-key="runs">0</span></div>
             <span class="label">Runs</span>
           </div>
           <div class="stat reveal" data-delay="2">
+            <span class="stat__icon" data-icon="time"></span>
             <div class="stat__value"><span data-count-key="hours">0</span><sup>H</sup></div>
             <span class="label">Hours on feet</span>
           </div>
           <div class="stat reveal" data-delay="3">
+            <span class="stat__icon" data-icon="route"></span>
             <div class="stat__value"><span data-count-key="longestKm">0</span><sup>KM</sup></div>
             <span class="label">Longest run</span>
           </div>
           <div class="stat reveal" data-delay="4">
+            <span class="stat__icon" data-icon="medal"></span>
             <div class="stat__value"><span data-count-key="ultras">0</span></div>
             <span class="label">50K+ ultras</span>
           </div>
         </div>
       </div>
+
+      <a class="scroll-cue" href="#stats" aria-label="Scroll to stats"><span></span></a>
     </section>
 
     <!-- ================= MARQUEE ================= -->
@@ -156,11 +185,10 @@
         </div>
 
         <div class="bento">
-          <!-- Weekly distance -->
           <article class="card span-8 reveal">
             <div class="card__head">
               <div>
-                <span class="label">Weekly distance</span>
+                <span class="label"><span data-icon="week"></span>Weekly distance</span>
                 <h3 class="card__title">Last 12 weeks</h3>
               </div>
               <div style="text-align:right">
@@ -171,11 +199,10 @@
             <svg class="chart" id="weeklyChart" viewBox="0 0 760 280" role="img" aria-label="Weekly distance bar chart"></svg>
           </article>
 
-          <!-- Run days -->
           <article class="card span-4 reveal" data-delay="1">
             <div class="card__head">
               <div>
-                <span class="label">Consistency</span>
+                <span class="label"><span data-icon="calendar"></span>Consistency</span>
                 <h3 class="card__title" data-bind="runDaysTitle">Days of training</h3>
               </div>
             </div>
@@ -201,11 +228,38 @@
             </div>
           </article>
 
-          <!-- Run length mix -->
+          <article class="card span-8 reveal">
+            <div class="card__head">
+              <div>
+                <span class="label"><span data-icon="trend"></span>Road to the next milestone</span>
+                <h3 class="card__title">Cumulative distance</h3>
+              </div>
+              <div style="text-align:right">
+                <div class="card__big" style="font-size:2rem" data-bind="cumulativeTotal">—</div>
+                <span class="trend" data-bind="nextMilestone"></span>
+              </div>
+            </div>
+            <svg class="chart" id="cumulativeChart" viewBox="0 0 760 280" role="img" aria-label="Cumulative distance with milestones"></svg>
+          </article>
+
+          <article class="card span-4 reveal" data-delay="1">
+            <div class="card__head">
+              <div>
+                <span class="label"><span data-icon="calendar"></span>Weekday rhythm</span>
+                <h3 class="card__title">Distance by day</h3>
+              </div>
+              <div style="text-align:right">
+                <span class="label">Busiest</span>
+                <div class="mono" style="font-size:.9rem" data-bind="busiestDay">—</div>
+              </div>
+            </div>
+            <svg class="chart rose" id="weekdayRose" viewBox="0 0 320 320" role="img" aria-label="Distance by weekday"></svg>
+          </article>
+
           <article class="card span-4 reveal">
             <div class="card__head">
               <div>
-                <span class="label">Distance mix</span>
+                <span class="label"><span data-icon="layers"></span>Distance mix</span>
                 <h3 class="card__title">Where the km come from</h3>
               </div>
             </div>
@@ -215,22 +269,20 @@
             </div>
           </article>
 
-          <!-- Heart rate -->
           <article class="card span-4 reveal" data-delay="1">
             <div class="card__head">
               <div>
-                <span class="label">Average heart rate</span>
+                <span class="label"><span data-icon="heart"></span>Average heart rate</span>
                 <h3 class="card__title">Share of time by bpm</h3>
               </div>
             </div>
             <div class="zones" id="hrBands"></div>
           </article>
 
-          <!-- Pace by month -->
           <article class="card span-4 reveal" data-delay="2">
             <div class="card__head">
               <div>
-                <span class="label">Average pace</span>
+                <span class="label"><span data-icon="pace"></span>Average pace</span>
                 <h3 class="card__title">By month</h3>
               </div>
               <div style="text-align:right">
@@ -241,11 +293,10 @@
             <svg class="chart" id="paceChart" viewBox="0 0 360 170" role="img" aria-label="Average pace by month"></svg>
           </article>
 
-          <!-- Heatmap -->
           <article class="card span-8 reveal">
             <div class="card__head">
               <div>
-                <span class="label">Every run</span>
+                <span class="label"><span data-icon="grid"></span>Every run</span>
                 <h3 class="card__title">Daily distance</h3>
               </div>
               <div style="text-align:right">
@@ -269,11 +320,10 @@
             </div>
           </article>
 
-          <!-- Monthly totals -->
           <article class="card span-4 reveal" data-delay="1">
             <div class="card__head">
               <div>
-                <span class="label">Monthly distance</span>
+                <span class="label"><span data-icon="load"></span>Monthly distance</span>
                 <h3 class="card__title">Volume by month</h3>
               </div>
             </div>
@@ -283,6 +333,50 @@
               <div style="text-align:right"><span class="label">Energy</span><strong data-bind="totalCalories">—</strong></div>
             </div>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SEASON ================= -->
+    <section class="section season" id="season" style="padding-top:0">
+      <div class="container">
+        <div class="section__head">
+          <div class="reveal">
+            <span class="eyebrow">The season in a circle</span>
+            <h2 class="section-title">Every<br /><em>single day</em></h2>
+          </div>
+          <p class="lead reveal" data-delay="1">Each spoke is one day, starting at the top and running clockwise. Longer spokes mean longer runs. Tap a spoke to open that run.</p>
+        </div>
+
+        <div class="season__grid">
+          <div class="card season__radial reveal">
+            <div class="radial-box">
+              <svg class="chart" id="seasonRadial" viewBox="0 0 640 640" role="img" aria-label="Radial chart of daily distance"></svg>
+              <div class="season__center">
+                <span class="label">Season total</span>
+                <strong data-bind="seasonKm">—</strong>
+                <span class="label">km · <span data-bind="seasonDays"></span></span>
+              </div>
+            </div>
+            <div class="season__legend label">
+              <span><i style="background:#4b6bd6"></i>&lt;5K</span>
+              <span><i style="background:#3d6bff"></i>5–10K</span>
+              <span><i style="background:#7aa0ff"></i>10–20K</span>
+              <span><i style="background:#c6f432"></i>20–30K</span>
+              <span><i style="background:#ff4d2e"></i>30K+</span>
+            </div>
+          </div>
+
+          <div class="card season__dna reveal" data-delay="1">
+            <div class="card__head">
+              <div>
+                <span class="label"><span data-icon="target"></span>Runner DNA</span>
+                <h3 class="card__title">Your profile, scored 0–100</h3>
+              </div>
+            </div>
+            <svg class="chart" id="dnaRadar" viewBox="0 0 440 380" role="img" aria-label="Radar chart of runner profile"></svg>
+            <ul class="dna-list" id="dnaList"></ul>
+          </div>
         </div>
       </div>
     </section>
@@ -314,6 +408,7 @@
                 <div><span class="label">Pace</span><strong data-bind="featuredPace">—</strong></div>
                 <div><span class="label">Avg HR</span><strong data-bind="featuredHr">—</strong></div>
               </div>
+              <a class="btn btn--primary btn--magnetic feature__cta" id="featuredLink" href="runs.html"><span data-icon="route"></span>Open run analysis <span data-icon="arrowRight"></span></a>
             </div>
           </div>
 
@@ -321,7 +416,7 @@
             <article class="card reveal" data-delay="1">
               <div class="card__head">
                 <div>
-                  <span class="label">Long efforts · 20K+</span>
+                  <span class="label"><span data-icon="route"></span>Long efforts · 20K+</span>
                   <h3 class="card__title">Every big day, in order</h3>
                 </div>
                 <div style="text-align:right">
@@ -334,7 +429,7 @@
             <article class="card reveal" data-delay="2">
               <div class="card__head">
                 <div>
-                  <span class="label">Effort map · pace vs heart rate</span>
+                  <span class="label"><span data-icon="pulse"></span>Effort map · pace vs heart rate</span>
                   <h3 class="card__title" data-bind="effortSubtitle">Every run</h3>
                 </div>
                 <div style="text-align:right">
@@ -362,6 +457,20 @@
       </div>
     </section>
 
+    <!-- ================= RECENT ================= -->
+    <section class="section" id="recent" style="padding-top:0">
+      <div class="container">
+        <div class="section__head">
+          <div class="reveal">
+            <span class="eyebrow">Fresh legs</span>
+            <h2 class="section-title">Latest<br /><em>runs</em></h2>
+          </div>
+          <a href="runs.html" class="btn btn--magnetic reveal" data-delay="1"><span data-icon="list"></span>All runs <span data-icon="arrowRight"></span></a>
+        </div>
+      </div>
+      <div class="rail" id="recentRail"></div>
+    </section>
+
     <!-- ================= LONG RUNS ================= -->
     <section class="section" id="races" style="padding-top:0">
       <div class="container">
@@ -386,9 +495,7 @@
             <span class="eyebrow">Gallery</span>
             <h2 class="section-title">Moments<br /><em>on course</em></h2>
           </div>
-          <a href="gallery.html" class="btn reveal" data-delay="1">Open full gallery
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
+          <a href="gallery.html" class="btn btn--magnetic reveal" data-delay="1"><span data-icon="grid"></span>Open full gallery <span data-icon="arrowRight"></span></a>
         </div>
 
         <div class="teaser">
@@ -412,9 +519,7 @@
           <h2 class="display" style="margin-top:1.25rem">Let’s go<br />the distance</h2>
           <p class="lead">Open to sponsorships, pacing, group long runs and race invitations across Bangladesh.</p>
           <div class="socials">
-            <a href="mailto:hello@example.com" class="btn btn--primary">hello@example.com
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
+            <a href="mailto:hello@example.com" class="btn btn--primary btn--magnetic">hello@example.com <span data-icon="arrowRight"></span></a>
             <a href="#" class="btn">Strava</a>
             <a href="#" class="btn">Instagram</a>
             <a href="#" class="btn">Facebook</a>

@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body data-page="gallery">
 
   <header class="nav" id="nav">
     <div class="container nav__inner">
@@ -20,11 +20,10 @@
         <span>Sahadat<span style="color:var(--blue-2)">.</span></span>
       </a>
       <ul class="nav__links">
-        <li><a href="index.html#stats">Stats</a></li>
-        <li><a href="index.html#featured">Featured</a></li>
-        <li><a href="index.html#bests">Bests</a></li>
-        <li><a href="index.html#races">Long runs</a></li>
-        <li><a href="gallery.html" class="is-active">Gallery</a></li>
+        <li><a href="index.html" data-nav="profile"><span data-icon="runner"></span>Profile</a></li>
+        <li><a href="runs.html" data-nav="history"><span data-icon="list"></span>Run history</a></li>
+        <li><a href="index.html#season"><span data-icon="target"></span>Season</a></li>
+        <li><a href="gallery.html" data-nav="gallery"><span data-icon="grid"></span>Gallery</a></li>
       </ul>
       <a href="index.html#contact" class="btn btn--primary">Get in touch
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>

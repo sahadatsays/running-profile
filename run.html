@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Run analysis — Sahadat Hossain</title>
+  <meta name="description" content="Full analysis of a single run: route replay, heart rate, pace, rankings and predictions." />
+  <meta name="theme-color" content="#07090c" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="preload" as="fetch" href="data.json" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="run">
+
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="brand" aria-label="Home">
+        <span class="brand__mark">SH</span>
+        <span>Sahadat<span style="color:var(--blue-2)">.</span></span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" data-nav="profile"><span data-icon="runner"></span>Profile</a></li>
+        <li><a href="runs.html" data-nav="history"><span data-icon="list"></span>Run history</a></li>
+        <li><a href="index.html#season"><span data-icon="target"></span>Season</a></li>
+        <li><a href="gallery.html" data-nav="gallery"><span data-icon="grid"></span>Gallery</a></li>
+      </ul>
+      <a href="index.html#contact" class="btn btn--primary btn--magnetic">Get in touch <span data-icon="arrowRight"></span></a>
+      <button class="nav__toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="runMain">
+    <!-- ================= MAP HERO ================= -->
+    <section class="run-hero" id="runMapWrap">
+      <div class="run-map" id="runMap"></div>
+
+      <div class="run-hero__top container">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="runs.html"><span data-icon="arrowLeft"></span>Run history</a>
+          <span>/</span>
+          <span data-run="crumb">Run</span>
+        </nav>
+        <span class="route-badge" id="routeBadge"></span>
+      </div>
+
+      <div class="run-hero__panel container">
+        <div class="run-title">
+          <span class="label" data-run="date"></span>
+          <h1 class="display" data-run="name">Loading run…</h1>
+          <span class="run-title__tier" data-run="tier"></span>
+        </div>
+
+        <div class="live">
+          <div class="live__head">
+            <span class="live__dot"></span><span class="label">Live replay</span>
+            <span class="label live__factor" id="liveFactor"></span>
+          </div>
+          <div class="live__grid">
+            <div><span class="label"><span data-icon="time"></span>Elapsed</span><b id="liveTime">0:00</b></div>
+            <div><span class="label"><span data-icon="distance"></span>Distance</span><b><span id="liveDist">0.00</span><small>km</small></b></div>
+            <div><span class="label"><span data-icon="pace"></span>Pace</span><b><span id="livePace">—</span><small>/km</small></b></div>
+            <div><span class="label"><span data-icon="heart"></span>Heart</span><b><span id="liveHr">—</span><small>bpm</small></b></div>
+          </div>
+          <div class="live__controls" id="liveControls">
+            <button class="live__play" id="livePlay" aria-label="Play replay"><span data-icon="play"></span></button>
+            <div class="live__scrub">
+              <input type="range" id="liveScrub" min="0" max="1000" value="0" aria-label="Replay position" />
+              <span class="mono" id="livePct">0%</span>
+            </div>
+            <div class="live__speeds" role="group" aria-label="Replay speed">
+              <button data-speed="0.5">½×</button>
+              <button data-speed="1" class="is-active">1×</button>
+              <button data-speed="3">3×</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= METRICS ================= -->
+    <section class="section run-section">
+      <div class="container">
+        <div class="section__head">
+          <div class="reveal">
+            <span class="eyebrow">Run analysis</span>
+            <h2 class="section-title">The<br /><em>numbers</em></h2>
+          </div>
+          <p class="lead reveal mono" data-delay="1" data-run="summary"></p>
+        </div>
+        <p class="same-day reveal" id="sameDay" hidden></p>
+        <div class="metric-grid" id="metricGrid"></div>
+      </div>
+    </section>
+
+    <!-- ================= ANALYTICS ================= -->
+    <section class="section run-section" style="padding-top:0">
+      <div class="container">
+        <div class="bento">
+          <article class="card span-4 reveal">
+            <div class="card__head">
+              <div>
+                <span class="label"><span data-icon="heart"></span>Heart-rate gauge</span>
+                <h3 class="card__title">Effort level</h3>
+              </div>
+            </div>
+            <div class="gauge-wrap">
+              <svg class="chart" id="hrGauge" viewBox="0 0 280 170" role="img" aria-label="Heart-rate gauge"></svg>
+              <div class="gauge-value" id="gaugeValue"></div>
+            </div>
+            <p class="gauge-band" id="gaugeBand"></p>
+            <p class="card-note" id="gaugeNote"></p>
+          </article>
+
+          <article class="card span-4 reveal" data-delay="1">
+            <div class="card__head">
+              <div>
+                <span class="label"><span data-icon="medal"></span>Rankings</span>
+                <h3 class="card__title">Against every run</h3>
+              </div>
+            </div>
+            <ul class="rank-list" id="rankList"></ul>
+          </article>
+
+          <article class="card span-4 reveal" data-delay="2">
+            <div class="card__head">
+              <div>
+                <span class="label"><span data-icon="target"></span>Compared to your average</span>
+                <h3 class="card__title">Above or below normal</h3>
+              </div>
+            </div>
+            <ul class="compare-list" id="compareList"></ul>
+          </article>
+
+          <article class="card span-8 reveal">
+            <div class="card__head">
+              <div>
+                <span class="label"><span data-icon="pace"></span>Pace distribution</span>
+                <h3 class="card__title">Where this run sits</h3>
+              </div>
+            </div>
+            <svg class="chart" id="paceHist" viewBox="0 0 760 240" role="img" aria-label="Pace distribution of all runs"></svg>
+            <p class="card-note" id="paceHistNote"></p>
+          </article>
+
+          <article class="card span-4 reveal" data-delay="1">
+            <div class="card__head">
+              <div>
+                <span class="label"><span data-icon="week"></span>That week</span>
+                <h3 class="card__title">Monday to Sunday</h3>
+              </div>
+              <div style="text-align:right">
+                <div class="card__big" style="font-size:2rem"><span id="weekTotal">—</span><small>km</small></div>
+              </div>
+            </div>
+            <svg class="chart" id="weekChart" viewBox="0 0 360 220" role="img" aria-label="Distance each day that week"></svg>
+            <p class="card-note" id="weekNote"></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GPS CHARTS (real tracks only) ================= -->
+    <section class="section run-section" id="trackCharts" style="padding-top:0" hidden>
+      <div class="container">
+        <div class="bento">
+          <article class="card span-12 reveal" id="eleCard" hidden>
+            <div class="card__head"><div><span class="label"><span data-icon="mountain"></span>Elevation</span><h3 class="card__title">Profile along the route</h3></div></div>
+            <svg class="chart" id="eleChart" viewBox="0 0 1100 220" role="img" aria-label="Elevation profile"></svg>
+          </article>
+          <article class="card span-6 reveal" id="hrCard" hidden>
+            <div class="card__head"><div><span class="label"><span data-icon="heart"></span>Heart rate</span><h3 class="card__title">Along the route</h3></div></div>
+            <svg class="chart" id="hrLine" viewBox="0 0 560 220" role="img" aria-label="Heart rate along the route"></svg>
+          </article>
+          <article class="card span-6 reveal" id="splitCard" hidden>
+            <div class="card__head"><div><span class="label"><span data-icon="speed"></span>Kilometre splits</span><h3 class="card__title">Speed per km</h3></div></div>
+            <svg class="chart" id="splitChart" viewBox="0 0 560 220" role="img" aria-label="Speed per kilometre"></svg>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PREDICTIONS ================= -->
+    <section class="section run-section" id="predictions" style="padding-top:0">
+      <div class="container">
+        <div class="section__head">
+          <div class="reveal">
+            <span class="eyebrow">Race predictions</span>
+            <h2 class="section-title">If you<br /><em>raced it</em></h2>
+          </div>
+          <p class="lead reveal" data-delay="1">Projected finish times from this run using the Riegel formula. Treat them as a guide — heat, terrain and pacing all change the real result.</p>
+        </div>
+        <div class="predict-grid" id="predictionGrid"></div>
+      </div>
+    </section>
+
+    <!-- ================= RELATED ================= -->
+    <section class="section run-section" style="padding-top:0">
+      <div class="container">
+        <div class="section__head">
+          <div class="reveal">
+            <span class="eyebrow">Similar distance</span>
+            <h2 class="section-title">Runs<br /><em>like this</em></h2>
+          </div>
+          <a href="runs.html" class="btn btn--magnetic reveal" data-delay="1"><span data-icon="list"></span>All runs <span data-icon="arrowRight"></span></a>
+        </div>
+        <div class="similar-grid" id="similarGrid"></div>
+        <nav class="pager" id="runPager" aria-label="Previous and next run"></nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© 2026 Sahadat Hossain · Ultra Runner</span>
+      <a href="runs.html" class="mono">← Back to run history</a>
+    </div>
+  </footer>
+
+  <div class="tooltip" id="tooltip"></div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

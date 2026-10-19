@@ -40,6 +40,8 @@ export const tooltip = {
 export function initNav() {
   const nav = $("#nav");
   if (!nav) return;
+  const page = document.body.dataset.page === "run" ? "history" : document.body.dataset.page;
+  $$("[data-nav]", nav).forEach((a) => a.classList.toggle("is-active", a.dataset.nav === page));
   const onScroll = () => nav.classList.toggle("is-scrolled", window.scrollY > 24);
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
@@ -93,6 +95,59 @@ export function initCounters(root = document) {
       };
       requestAnimationFrame(tick);
     }, 0.5);
+  });
+}
+
+/* Rolling-digit odometer: every digit is a column of 0–9 that slides into place */
+export function odometer(node, value, decimals = 0) {
+  if (!node) return;
+  const text = value.toLocaleString("en", { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
+  node.setAttribute("aria-label", text);
+  node.innerHTML = [...text]
+    .map((ch) =>
+      /\d/.test(ch)
+        ? `<span class="odo__digit" data-d="${ch}"><span class="odo__reel">${"0123456789".split("").map((n) => `<span>${n}</span>`).join("")}</span></span>`
+        : `<span class="odo__sep">${ch}</span>`
+    )
+    .join("");
+  onVisible(node, () => {
+    [...node.querySelectorAll(".odo__digit")].forEach((d, i) => {
+      const reel = d.firstElementChild;
+      reel.style.transitionDelay = `${i * 110}ms`;
+      reel.style.transform = `translateY(-${Number(d.dataset.d) * 10}%)`;
+    });
+  }, 0.2);
+}
+
+/* Pointer tilt for cards and photos */
+export function initTilt(selector = "[data-tilt]") {
+  if (reduceMotion || !window.matchMedia("(hover: hover)").matches) return;
+  $$(selector).forEach((node) => {
+    const max = Number(node.dataset.tilt || 8);
+    node.addEventListener("pointermove", (e) => {
+      const r = node.getBoundingClientRect();
+      const px = (e.clientX - r.left) / r.width - 0.5;
+      const py = (e.clientY - r.top) / r.height - 0.5;
+      node.style.setProperty("--rx", `${(-py * max).toFixed(2)}deg`);
+      node.style.setProperty("--ry", `${(px * max).toFixed(2)}deg`);
+      node.style.setProperty("--mx", `${((px + 0.5) * 100).toFixed(1)}%`);
+      node.style.setProperty("--my", `${((py + 0.5) * 100).toFixed(1)}%`);
+    });
+    node.addEventListener("pointerleave", () => {
+      node.style.setProperty("--rx", "0deg");
+      node.style.setProperty("--ry", "0deg");
+    });
+  });
+}
+
+export function initMagnetic(selector = ".btn--magnetic") {
+  if (reduceMotion || !window.matchMedia("(hover: hover)").matches) return;
+  $$(selector).forEach((btn) => {
+    btn.addEventListener("pointermove", (e) => {
+      const r = btn.getBoundingClientRect();
+      btn.style.transform = `translate(${(e.clientX - r.left - r.width / 2) * 0.18}px, ${(e.clientY - r.top - r.height / 2) * 0.3}px)`;
+    });
+    btn.addEventListener("pointerleave", () => (btn.style.transform = ""));
   });
 }
 

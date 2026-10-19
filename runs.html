@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Run history — Sahadat Hossain</title>
+  <meta name="description" content="Every run logged by ultra runner Sahadat Hossain, with filters, search and full analytics." />
+  <meta name="theme-color" content="#07090c" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preload" as="fetch" href="data.json" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="history">
+
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="brand" aria-label="Home">
+        <span class="brand__mark">SH</span>
+        <span>Sahadat<span style="color:var(--blue-2)">.</span></span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" data-nav="profile"><span data-icon="runner"></span>Profile</a></li>
+        <li><a href="runs.html" data-nav="history"><span data-icon="list"></span>Run history</a></li>
+        <li><a href="index.html#season"><span data-icon="target"></span>Season</a></li>
+        <li><a href="gallery.html" data-nav="gallery"><span data-icon="grid"></span>Gallery</a></li>
+      </ul>
+      <a href="index.html#contact" class="btn btn--primary btn--magnetic">Get in touch <span data-icon="arrowRight"></span></a>
+      <button class="nav__toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero page-hero--history">
+      <div class="hero__bg"></div>
+      <div class="hero__grid-lines"></div>
+      <div class="container">
+        <span class="eyebrow">Run history · <span data-bind="period">2026</span></span>
+        <h1 class="display hero__title" style="font-size:clamp(3.5rem,10vw,10rem)">
+          <span class="line"><span>Every</span></span>
+          <span class="line"><span class="outline outline--animated">Kilometre</span></span>
+        </h1>
+
+        <div class="summary-chips">
+          <div class="summary-chip reveal"><span data-icon="shoe"></span><div><b data-count-key="runs" data-count="0">0</b><small>Runs</small></div></div>
+          <div class="summary-chip reveal" data-delay="1"><span data-icon="distance"></span><div><b><span data-count-key="km" data-count="0">0</span> km</b><small>Distance</small></div></div>
+          <div class="summary-chip reveal" data-delay="2"><span data-icon="time"></span><div><b><span data-count-key="hours" data-count="0">0</span> h</b><small>On feet</small></div></div>
+          <div class="summary-chip reveal" data-delay="3"><span data-icon="flame"></span><div><b data-count-key="kcal" data-count="0">0</b><small>kcal burned</small></div></div>
+        </div>
+
+        <div class="barcode-wrap reveal">
+          <div class="barcode-head">
+            <span class="label"><span data-icon="load"></span>Every run in order · bar height is distance, colour is heart rate</span>
+          </div>
+          <div class="barcode" id="runBarcode"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container history" id="historyTop">
+      <div class="toolbar">
+        <label class="search">
+          <span data-icon="search"></span>
+          <input id="searchInput" type="search" placeholder="Search runs, e.g. Sylhet, Long Run, Sep" autocomplete="off" />
+        </label>
+        <div class="toolbar__selects">
+          <label class="select"><span data-icon="calendar"></span><select id="monthSelect" aria-label="Month"></select></label>
+          <label class="select"><span data-icon="sort"></span><select id="sortSelect" aria-label="Sort"></select></label>
+          <div class="view-toggle" role="group" aria-label="View">
+            <button data-view="grid" aria-label="Card view"><span data-icon="grid"></span></button>
+            <button data-view="list" aria-label="Table view"><span data-icon="list"></span></button>
+          </div>
+        </div>
+        <div class="chip-row" id="filterChips" role="group" aria-label="Filter runs"></div>
+      </div>
+
+      <div class="result-bar">
+        <p class="result-meta" id="resultMeta"></p>
+        <label class="select select--small"><select id="perSelect" aria-label="Runs per page"></select></label>
+      </div>
+
+      <div class="results" id="results"></div>
+      <nav class="pagination" id="pagination" aria-label="Pagination"></nav>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© 2026 Sahadat Hossain · Ultra Runner</span>
+      <a href="index.html" class="mono">← Back to profile</a>
+    </div>
+  </footer>
+
+  <div class="tooltip" id="tooltip"></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

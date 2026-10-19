@@ -33,7 +33,7 @@ const smoothPath = (pts) => {
 };
 
 /* Vertical bars */
-export function barChart(svg, { values, labels, highlight = () => false, topLabel, tip, step = 20 }) {
+export function barChart(svg, { values, labels, highlight = () => false, topLabel, tip, step = 20, onClick }) {
   if (!svg || !values.length) return;
   svg.replaceChildren();
   const [W, H] = viewBox(svg);
@@ -83,11 +83,15 @@ export function barChart(svg, { values, labels, highlight = () => false, topLabe
       bar.style.filter = "";
       tooltip.hide();
     });
+    if (onClick) {
+      hit.style.cursor = "pointer";
+      hit.addEventListener("click", () => onClick(i));
+    }
   });
 }
 
 /* Smooth line with gradient area */
-export function lineChart(svg, { values, labels, color, invert = false, tip }) {
+export function lineChart(svg, { values, labels, color, invert = false, tip, dots = true }) {
   if (!svg || values.length < 2) return;
   svg.replaceChildren();
   const [W, H] = viewBox(svg);
@@ -121,10 +125,12 @@ export function lineChart(svg, { values, labels, color, invert = false, tip }) {
     el("text", { x: x(i), y: H - 6, "text-anchor": anchor }, svg).textContent = l;
   });
 
-  pts.forEach(([px, py], i) => {
-    const d = el("circle", { cx: px, cy: py, r: 4, class: "dot", stroke: color }, svg);
-    d.style.transitionDelay = `${0.8 + i * 0.1}s`;
-  });
+  if (dots) {
+    pts.forEach(([px, py], i) => {
+      const d = el("circle", { cx: px, cy: py, r: 4, class: "dot", stroke: color }, svg);
+      d.style.transitionDelay = `${0.8 + i * 0.1}s`;
+    });
+  }
 
   const guide = el("line", { y1: pad.t, y2: pad.t + ih, stroke: "rgba(255,255,255,.25)", "stroke-dasharray": "3 4", opacity: 0 }, svg);
   const focus = el("circle", { r: 6, fill: color, stroke: "#07090c", "stroke-width": 3, opacity: 0 }, svg);
@@ -153,7 +159,7 @@ export function lineChart(svg, { values, labels, color, invert = false, tip }) {
 }
 
 /* Scatter: x = pace (faster on the right), y = heart rate */
-export function scatterChart(svg, { points, maxPace, highlight, tip }) {
+export function scatterChart(svg, { points, maxPace, highlight, tip, onClick }) {
   if (!svg || !points.length) return;
   svg.replaceChildren();
   const [W, H] = viewBox(svg);
@@ -189,6 +195,7 @@ export function scatterChart(svg, { points, maxPace, highlight, tip }) {
     c.style.transitionDelay = `${i * 12}ms`;
     c.addEventListener("mousemove", (e) => tooltip.show(e, tip(p)));
     c.addEventListener("mouseleave", tooltip.hide);
+    if (onClick) c.addEventListener("click", () => onClick(p));
   });
 }
 
@@ -278,3 +285,5 @@ export function heatmap(container, monthsRow, { weeks, cells, months }, tip) {
     })
     .join("");
 }
+
+export { el, gradient, niceMax, smoothPath, svgPoint, viewBox };
