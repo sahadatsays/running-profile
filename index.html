@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sahadat Hossain — Ultra Runner</title>
+  <meta name="description" content="Running profile of Sahadat Hossain, ultra runner from Dhaka, Bangladesh. Races, training stats, personal bests and gallery." />
+  <meta name="theme-color" content="#07090c" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="assets/img/00005-800.jpg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= NAV ================= -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="brand" aria-label="Home">
+        <span class="brand__mark">SH</span>
+        <span>Sahadat<span style="color:var(--blue-2)">.</span></span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#stats">Stats</a></li>
+        <li><a href="#featured">Featured</a></li>
+        <li><a href="#bests">Bests</a></li>
+        <li><a href="#races">Races</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+      <a href="#contact" class="btn btn--primary">Get in touch
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <button class="nav__toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="hero__bg"></div>
+      <div class="hero__grid-lines"></div>
+
+      <div class="container">
+        <div class="hero__inner">
+          <div>
+            <span class="hero__status"><i class="pulse"></i> Training for the next ultra</span>
+
+            <h1 class="display hero__title">
+              <span class="line"><span>Sahadat</span></span>
+              <span class="line"><span class="outline">Hossain</span></span>
+            </h1>
+
+            <div class="hero__meta">
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 1 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                Dhaka, Bangladesh
+              </span>
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 4a2 2 0 1 0 0-.01M7 21l3-6 3 2v4M10 15l1-5 4 3h3M8 10l3-2"/></svg>
+                Ultra &amp; Trail Runner
+              </span>
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l6-6 4 4 8-8M14 7h7v7"/></svg>
+                50K Finisher
+              </span>
+            </div>
+
+            <p class="hero__quote">
+              “The body achieves what the mind <strong>believes</strong>.” One step at a time — from city roads to tea-garden trails.
+            </p>
+
+            <div class="hero__cta">
+              <a href="#races" class="btn btn--primary">View race history
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+              <a href="gallery.html" class="btn">Photo gallery</a>
+            </div>
+          </div>
+
+          <div class="hero__visual">
+            <div class="hero__photo">
+              <img src="assets/img/00005-800.jpg"
+                   srcset="assets/img/00005-800.jpg 800w, assets/img/00005-1800.jpg 1365w"
+                   sizes="(max-width: 900px) 90vw, 480px"
+                   width="800" height="1200"
+                   alt="Sahadat Hossain at the Sylhet Ultra Trail wearing bib 707" />
+              <div class="hero__photo-caption">
+                <div>
+                  <span class="label">Sylhet Ultra Trail</span>
+                  <strong>Bib #707</strong>
+                </div>
+                <span class="tag tag--ghost">Trail</span>
+              </div>
+            </div>
+
+            <div class="chip chip--a">
+              <span class="chip__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4zM17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg>
+              </span>
+              <div><strong>50 KM</strong><small>Fuel Xtreme Ultra</small></div>
+            </div>
+
+            <div class="chip chip--b chip--fire">
+              <span class="chip__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c4 0 7-3 7-7 0-5-5-6-4-11-3 1-6 4-6 8-1-1-2-2-2-4-2 2-2 4-2 7 0 4 3 7 7 7z"/></svg>
+              </span>
+              <div><strong>412 km</strong><small>Last 30 days</small></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-strip">
+          <div class="stat reveal">
+            <div class="stat__value"><span data-count="6240">0</span><sup>KM</sup></div>
+            <span class="label">Lifetime distance</span>
+          </div>
+          <div class="stat reveal" data-delay="1">
+            <div class="stat__value"><span data-count="21">0</span></div>
+            <span class="label">Races finished</span>
+          </div>
+          <div class="stat reveal" data-delay="2">
+            <div class="stat__value"><span data-count="4">0</span></div>
+            <span class="label">Ultra marathons</span>
+          </div>
+          <div class="stat reveal" data-delay="3">
+            <div class="stat__value"><span data-count="50">0</span><sup>KM</sup></div>
+            <span class="label">Longest race</span>
+          </div>
+          <div class="stat reveal" data-delay="4">
+            <div class="stat__value"><span data-count="41800">0</span><sup>M</sup></div>
+            <span class="label">Elevation gained</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MARQUEE ================= -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span class="marquee__item">Fuel Xtreme Ultra 50K</span>
+        <span class="marquee__item">Sylhet Ultra Trail</span>
+        <span class="marquee__item">Dhaka Half Marathon</span>
+        <span class="marquee__item">Dhaka — Mawa</span>
+        <span class="marquee__item">One step at a time</span>
+        <span class="marquee__item">Fuel Xtreme Ultra 50K</span>
+        <span class="marquee__item">Sylhet Ultra Trail</span>
+        <span class="marquee__item">Dhaka Half Marathon</span>
+        <span class="marquee__item">Dhaka — Mawa</span>
+        <span class="marquee__item">One step at a time</span>
+      </div>
+    </div>
+
+    <!-- ================= STATS DASHBOARD ================= -->
+    <section class="section" id="stats">
+      <div class="container">
+        <div class="section__head">
+          <div class="reveal">
+            <span class="eyebrow">Training log · 2026</span>
+            <h2 class="section-title">Miles in<br /><em>the legs</em></h2>
+          </div>
+          <p class="lead reveal" data-delay="1">Every ultra is built in the weeks nobody sees. Volume, consistency and heart-rate discipline — tracked week by week.</p>
+        </div>
+
+        <div class="bento">
+          <!-- Weekly mileage -->
+          <article class="card span-8 reveal">
+            <div class="card__head">
+              <div>
+                <span class="label">Weekly distance</span>
+                <h3 class="card__title">Last 12 weeks</h3>
+              </div>
+              <div style="text-align:right">
+                <div class="card__big"><span data-count="86">0</span><small>km avg</small></div>
+                <span class="trend">▲ 14% vs prev. block</span>
+              </div>
+            </div>
+            <svg class="chart" id="weeklyChart" viewBox="0 0 760 280" role="img" aria-label="Weekly distance bar chart"></svg>
+          </article>
+
+          <!-- Yearly goal -->
+          <article class="card span-4 reveal" data-delay="1">
+            <div class="card__head">
+              <div>
+                <span class="label">Annual goal</span>
+                <h3 class="card__title">3,000 km in 2026</h3>
+              </div>
+            </div>
+            <div class="ring-wrap">
+              <svg class="ring" id="goalRing" viewBox="0 0 200 200">
+                <defs>
+                  <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#7aa0ff" />
+                    <stop offset="1" stop-color="#3d6bff" />
+                  </linearGradient>
+                </defs>
+                <circle class="track" cx="100" cy="100" r="84" />
+                <circle class="progress" cx="100" cy="100" r="84" />
+              </svg>
+              <div class="ring-center">
+                <strong><span data-count="81">0</span>%</strong>
+                <span class="label">complete</span>
+              </div>
+            </div>
+            <div class="ring-legend">
+              <div><span class="label">Done</span><strong>2,436 km</strong></div>
+              <div style="text-align:right"><span class="label">To go</span><strong>564 km</strong></div>
+            </div>
+          </article>
+
+          <!-- Terrain donut -->
+          <article class="card span-4 reveal">
+            <div class="card__head">
+              <div>
+                <span class="label">Terrain mix</span>
+                <h3 class="card__title">Where the km happen</h3>
+              </div>
+            </div>
+            <div class="donut-wrap">
+              <svg class="donut" id="terrainDonut" viewBox="0 0 160 160"></svg>
+              <ul class="legend" id="terrainLegend"></ul>
+            </div>
+          </article>
+
+          <!-- HR zones -->
+          <article class="card span-4 reveal" data-delay="1">
+            <div class="card__head">
+              <div>
+                <span class="label">Heart-rate zones</span>
+                <h3 class="card__title">Time in zone · 30 days</h3>
+              </div>
+            </div>
+            <div class="zones" id="hrZones"></div>
+          </article>
+
+          <!-- Pace trend -->
+          <article class="card span-4 reveal" data-delay="2">
+            <div class="card__head">
+              <div>
+                <span class="label">Easy-run pace</span>
+                <h3 class="card__title">Getting faster</h3>
+              </div>
+              <div style="text-align:right">
+                <div class="card__big" style="font-size:2rem">5:42<small>/km</small></div>
+                <span class="trend">▼ 0:31 since Jan</span>
+              </div>
+            </div>
+            <svg class="chart" id="paceChart" viewBox="0 0 360 170" role="img" aria-label="Pace trend line chart"></svg>
+          </article>
+
+          <!-- Heatmap -->
+          <article class="card span-12 reveal">
+            <div class="card__head">
+              <div>
+                <span class="label">Consistency</span>
+                <h3 class="card__title">Every run, last 52 weeks</h3>
+              </div>
+              <div style="text-align:right">
+                <div class="card__big"><span data-count="287">0</span><small>run days</small></div>
+              </div>
+            </div>
+            <div class="heatmap-months label" id="heatMonths"></div>
+            <div class="heatmap" id="heatmap"></div>
+            <div class="heatmap-foot">
+              <span class="label">Longest streak · 46 days</span>
+              <div class="heat-scale label">
+                Less
+                <i style="background:rgba(255,255,255,.05)"></i>
+                <i style="background:rgba(61,107,255,.28)"></i>
+                <i style="background:rgba(61,107,255,.5)"></i>
+                <i style="background:rgba(61,107,255,.78)"></i>
+                <i style="background:#7aa0ff"></i>
+                <i style="background:#ff4d2e"></i>
+                Race
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURED RACE ================= -->
+    <section class="section" id="featured" style="padding-top:0">
+      <div class="container">
+        <div class="section__head">
+          <div class="reveal">
+            <span class="eyebrow">Featured race</span>
+            <h2 class="section-title">Fifty<br /><em>kilometres</em></h2>
+          </div>
+          <p class="lead reveal" data-delay="1">Fuel Xtreme Ultra 2026 — a flat, hot, relentless 50K from Dhaka to Mawa. Patience early, grit late.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature__media reveal">
+            <img src="assets/img/00003-1800.jpg"
+                 srcset="assets/img/00003-800.jpg 800w, assets/img/00003-1800.jpg 1800w"
+                 sizes="(max-width: 1100px) 100vw, 620px"
+                 width="1800" height="1200" loading="lazy"
+                 alt="Sahadat running the Fuel Xtreme Ultra with arms outstretched" />
+            <div class="feature__overlay">
+              <span class="tag">Ultra · 50K</span>
+              <h3 class="display">Fuel Xtreme<br />Ultra 2026</h3>
+              <div class="feature__facts">
+                <div><span class="label">Date</span><strong>03 Jul</strong></div>
+                <div><span class="label">Route</span><strong>Dhaka–Mawa</strong></div>
+                <div><span class="label">Time</span><strong>5:48:12</strong></div>
+                <div><span class="label">Bib</span><strong>#5008</strong></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature__side">
+            <article class="card reveal" data-delay="1">
+              <div class="card__head">
+                <div>
+                  <span class="label">Pace per 5K split</span>
+                  <h3 class="card__title">Negative split from 35K</h3>
+                </div>
+                <div style="text-align:right">
+                  <div class="card__big" style="font-size:2rem">6:58<small>/km avg</small></div>
+                </div>
+              </div>
+              <svg class="chart" id="splitsChart" viewBox="0 0 560 220" role="img" aria-label="Pace per split chart"></svg>
+            </article>
+
+            <article class="card reveal" data-delay="2">
+              <div class="card__head">
+                <div>
+                  <span class="label">Heart rate</span>
+                  <h3 class="card__title">Held in zone 2–3</h3>
+                </div>
+                <div style="text-align:right">
+                  <div class="card__big" style="font-size:2rem">148<small>bpm avg</small></div>
+                </div>
+              </div>
+              <svg class="chart" id="hrChart" viewBox="0 0 560 180" role="img" aria-label="Heart rate over race chart"></svg>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PERSONAL BESTS ================= -->
+    <section class="section" id="bests" style="padding-top:0">
+      <div class="container">
+        <div class="section__head">
+          <div class="reveal">
+            <span class="eyebrow">Personal bests</span>
+            <h2 class="section-title">Fastest<br /><em>on record</em></h2>
+          </div>
+        </div>
+
+        <div class="pbs">
+          <div class="pb reveal"><span class="label">Distance</span><div class="pb__dist">5K</div><span class="pb__time">22:14</span><span class="pb__race">Hatirjheel parkrun</span></div>
+          <div class="pb reveal" data-delay="1"><span class="label">Distance</span><div class="pb__dist">10K</div><span class="pb__time">47:38</span><span class="pb__race">Dhaka 10K Run</span></div>
+          <div class="pb reveal" data-delay="2"><span class="label">Distance</span><div class="pb__dist">21.1K</div><span class="pb__time">1:48:30</span><span class="pb__race">Dhaka Half Marathon</span></div>
+          <div class="pb reveal" data-delay="3"><span class="label">Distance</span><div class="pb__dist">42.2K</div><span class="pb__time">4:05:51</span><span class="pb__race">Dhaka Marathon</span></div>
+          <div class="pb pb--ultra reveal" data-delay="4"><span class="label" style="color:var(--blue-2)">Ultra</span><div class="pb__dist">50K</div><span class="pb__time">5:48:12</span><span class="pb__race">Fuel Xtreme Ultra 2026</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= RACE HISTORY ================= -->
+    <section class="section" id="races" style="padding-top:0">
+      <div class="container">
+        <div class="section__head">
+          <div class="reveal">
+            <span class="eyebrow">Race history</span>
+            <h2 class="section-title">Start lines<br /><em>&amp; finish lines</em></h2>
+          </div>
+          <p class="lead reveal" data-delay="1">From the first half marathon to tea-garden trails and a 50K across the Padma road.</p>
+        </div>
+
+        <ol class="timeline" id="timeline">
+          <li class="timeline__progress" id="timelineProgress" aria-hidden="true"></li>
+          <li class="tl tl--ultra reveal">
+            <span class="tl__date">03 Jul 2026</span>
+            <div><div class="tl__name">Fuel Xtreme Ultra 2026</div><span class="tl__sub">50 km · Road ultra · Dhaka–Mawa</span></div>
+            <div class="tl__result"><strong>5:48:12</strong><span class="label">Finisher</span></div>
+          </li>
+          <li class="tl tl--ultra reveal">
+            <span class="tl__date">Feb 2026</span>
+            <div><div class="tl__name">Sylhet Ultra Trail</div><span class="tl__sub">Trail ultra · Tea gardens of Sylhet</span></div>
+            <div class="tl__result"><strong>Finished</strong><span class="label">Bib 707</span></div>
+          </li>
+          <li class="tl reveal">
+            <span class="tl__date">Jan 2026</span>
+            <div><div class="tl__name">Fast Wash Dhaka Half Marathon</div><span class="tl__sub">21.1 km · Road · Dhaka city</span></div>
+            <div class="tl__result"><strong>1:48:30</strong><span class="label">Bib 2210 · PB</span></div>
+          </li>
+          <li class="tl reveal">
+            <span class="tl__date">Dec 2025</span>
+            <div><div class="tl__name">Dhaka Marathon</div><span class="tl__sub">42.2 km · Road · Full marathon</span></div>
+            <div class="tl__result"><strong>4:05:51</strong><span class="label">PB</span></div>
+          </li>
+          <li class="tl reveal">
+            <span class="tl__date">Oct 2025</span>
+            <div><div class="tl__name">Dhaka 10K Run</div><span class="tl__sub">10 km · Road</span></div>
+            <div class="tl__result"><strong>47:38</strong><span class="label">PB</span></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= GALLERY TEASER ================= -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="section__head">
+          <div class="reveal">
+            <span class="eyebrow">Gallery</span>
+            <h2 class="section-title">Moments<br /><em>on course</em></h2>
+          </div>
+          <a href="gallery.html" class="btn reveal" data-delay="1">Open full gallery
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <div class="teaser">
+          <a href="gallery.html" class="reveal"><img src="assets/img/00001-800.jpg" loading="lazy" width="800" height="1200" alt="Dhaka Half Marathon, thumbs up" style="object-position:center 30%" /></a>
+          <a href="gallery.html" class="reveal" data-delay="1"><img src="assets/img/00004-800.jpg" loading="lazy" width="800" height="1200" alt="Sylhet Ultra Trail" style="object-position:center 25%" /></a>
+          <a href="gallery.html" class="reveal" data-delay="2"><img src="assets/img/00002-800.jpg" loading="lazy" width="800" height="800" alt="Fuel Xtreme Ultra race poster" /></a>
+          <a href="gallery.html" class="reveal" data-delay="3"><img src="assets/img/00003-800.jpg" loading="lazy" width="800" height="533" alt="Fuel Xtreme Ultra on the road" /></a>
+          <a href="gallery.html" class="teaser__more reveal" data-delay="4">
+            <strong>View all</strong>
+            <span class="label" style="color:rgba(255,255,255,.75);margin-top:.5rem">5 photos · 3 races</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section" id="contact" style="padding-top:0">
+      <div class="container">
+        <div class="cta-block reveal">
+          <span class="eyebrow">Run together</span>
+          <h2 class="display" style="margin-top:1.25rem">Let’s go<br />the distance</h2>
+          <p class="lead">Open to sponsorships, pacing, group long runs and race invitations across Bangladesh.</p>
+          <div class="socials">
+            <a href="mailto:hello@example.com" class="btn btn--primary">hello@example.com
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#" class="btn">Strava</a>
+            <a href="#" class="btn">Instagram</a>
+            <a href="#" class="btn">Facebook</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© 2026 Sahadat Hossain · Ultra Runner</span>
+      <span class="mono">Dhaka · 23.81°N 90.41°E</span>
+    </div>
+  </footer>
+
+  <div class="tooltip" id="tooltip"></div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Sahadat Hossain</title>
+  <meta name="description" content="Race photo gallery of ultra runner Sahadat Hossain." />
+  <meta name="theme-color" content="#07090c" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="brand" aria-label="Home">
+        <span class="brand__mark">SH</span>
+        <span>Sahadat<span style="color:var(--blue-2)">.</span></span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html#stats">Stats</a></li>
+        <li><a href="index.html#featured">Featured</a></li>
+        <li><a href="index.html#bests">Bests</a></li>
+        <li><a href="index.html#races">Races</a></li>
+        <li><a href="gallery.html" class="is-active">Gallery</a></li>
+      </ul>
+      <a href="index.html#contact" class="btn btn--primary">Get in touch
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <button class="nav__toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="hero__bg"></div>
+      <div class="hero__grid-lines"></div>
+      <div class="container">
+        <span class="eyebrow">Photo gallery</span>
+        <h1 class="display hero__title" style="font-size:clamp(4rem,12vw,12rem)">
+          <span class="line"><span>Race</span></span>
+          <span class="line"><span class="outline">Moments</span></span>
+        </h1>
+        <div class="page-hero__row">
+          <p class="lead" style="margin:0">Roads of Dhaka, the expressway to Mawa and the tea gardens of Sylhet — captured kilometre by kilometre.</p>
+          <div class="filters" id="filters" role="tablist" aria-label="Filter photos">
+            <button class="filter is-active" data-filter="all" role="tab">All<sup>5</sup></button>
+            <button class="filter" data-filter="ultra" role="tab">Ultra<sup>2</sup></button>
+            <button class="filter" data-filter="trail" role="tab">Trail<sup>2</sup></button>
+            <button class="filter" data-filter="road" role="tab">Road<sup>1</sup></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="masonry" id="masonry">
+        <button class="shot reveal" data-cat="road"
+                data-full="assets/img/00001-1800.jpg"
+                data-title="Fast Wash Dhaka Half Marathon"
+                data-meta="21.1 km · Road · Bib 2210">
+          <img src="assets/img/00001-800.jpg" width="800" height="1200" loading="lazy" alt="Thumbs up during the Dhaka Half Marathon" />
+          <span class="shot__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
+          <span class="shot__info"><span class="label">Road · 21.1K</span><strong>Dhaka Half Marathon</strong></span>
+        </button>
+
+        <button class="shot reveal" data-delay="1" data-cat="ultra"
+                data-full="assets/img/00003-1800.jpg"
+                data-title="Fuel Xtreme Ultra 2026"
+                data-meta="50 km · Dhaka–Mawa · Bib 5008">
+          <img src="assets/img/00003-800.jpg" width="800" height="533" loading="lazy" alt="Arms wide open on the Dhaka–Mawa road" />
+          <span class="shot__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
+          <span class="shot__info"><span class="label">Ultra · 50K</span><strong>Fuel Xtreme Ultra</strong></span>
+        </button>
+
+        <button class="shot reveal" data-delay="2" data-cat="trail"
+                data-full="assets/img/00005-1800.jpg"
+                data-title="Sylhet Ultra Trail"
+                data-meta="Trail ultra · Tea gardens · Bib 707">
+          <img src="assets/img/00005-800.jpg" width="800" height="1200" loading="lazy" alt="Hands on hips at the Sylhet Ultra Trail" />
+          <span class="shot__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
+          <span class="shot__info"><span class="label">Trail</span><strong>Sylhet Ultra Trail</strong></span>
+        </button>
+
+        <button class="shot reveal" data-cat="ultra"
+                data-full="assets/img/00002-1800.jpg"
+                data-title="Fuel Xtreme Ultra — Race Poster"
+                data-meta="Race category 50 km · 03 July 2026">
+          <img src="assets/img/00002-800.jpg" width="800" height="800" loading="lazy" alt="Fuel Xtreme Ultra 2026 race poster" />
+          <span class="shot__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
+          <span class="shot__info"><span class="label">Ultra · Poster</span><strong>50KM. One victory forever.</strong></span>
+        </button>
+
+        <button class="shot reveal" data-delay="1" data-cat="trail"
+                data-full="assets/img/00004-1800.jpg"
+                data-title="Sylhet Ultra Trail"
+                data-meta="Trail ultra · Thumbs up between the tea bushes">
+          <img src="assets/img/00004-800.jpg" width="800" height="1200" loading="lazy" alt="Thumbs up at the Sylhet Ultra Trail" />
+          <span class="shot__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
+          <span class="shot__info"><span class="label">Trail</span><strong>Tea-garden miles</strong></span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© 2026 Sahadat Hossain · Ultra Runner</span>
+      <a href="index.html" class="mono">← Back to profile</a>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <div class="lightbox__bar">
+      <span class="label" id="lbCount">01 / 05</span>
+      <button class="icon-btn" id="lbClose" aria-label="Close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="lightbox__stage">
+      <button class="icon-btn lightbox__prev" id="lbPrev" aria-label="Previous photo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg>
+      </button>
+      <img id="lbImg" src="" alt="" />
+      <button class="icon-btn lightbox__next" id="lbNext" aria-label="Next photo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+      </button>
+    </div>
+    <div class="lightbox__caption">
+      <strong id="lbTitle"></strong>
+      <span class="label" id="lbMeta"></span>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
