@@ -1,13 +1,118 @@
 {
   "source": "COROS",
-  "generatedAt": "2026-10-19",
+  "generatedAt": "2026-11-13",
   "period": {
     "startDate": "2025-11-01",
-    "endDate": "2026-10-19"
+    "endDate": "2026-11-13"
   },
-  "count": 239,
+  "count": 322,
   "totalDistanceKm": 2407.36,
   "records": [
+    {
+      "sport": "Outdoor Run",
+      "date": "2026-11-13",
+      "name": "Dhaka District Run",
+      "duration": "1:50:00",
+      "labelId": "481717836054560869"
+    },
+    {
+      "sport": "Outdoor Run",
+      "date": "2026-11-11",
+      "name": "Easy Run with 15-Second Strides",
+      "duration": "1:41:24",
+      "labelId": "481684187395424257"
+    },
+    {
+      "sport": "Outdoor Run",
+      "date": "2026-11-10",
+      "name": "Indoor Run",
+      "duration": "44:56",
+      "labelId": "481660443750858754"
+    },
+    {
+      "sport": "Indoor Run",
+      "date": "2026-11-09",
+      "name": "Dhaka North Marathon 2026 । Season 02",
+      "duration": "6:01:29",
+      "labelId": "481636946790088907"
+    },
+    {
+      "sport": "Outdoor Run",
+      "date": "2026-11-06",
+      "name": "Easy Run with 200m Strides",
+      "duration": "6:01:29",
+      "labelId": "481558338149056820"
+    },
+    {
+      "sport": "Outdoor Run",
+      "date": "2026-11-04",
+      "name": "Dhaka District Run",
+      "duration": "1:05:15",
+      "labelId": "481522116544463051"
+    },
+    {
+      "sport": "Outdoor Run",
+      "date": "2026-11-02",
+      "name": "Albatross Ultrail 2026",
+      "duration": "1:30:01",
+      "labelId": "481475043969237193"
+    },
+    {
+      "sport": "Trail Run",
+      "date": "2026-10-31",
+      "name": "Khagrachari District Open Water",
+      "duration": "5:56:59",
+      "labelId": "481424357980143820"
+    },
+    {
+      "sport": "Open Water Swim",
+      "date": "2026-10-30",
+      "name": "Easy Run with 200m Strides",
+      "duration": "2:37",
+      "labelId": "481398107676901477"
+    },
+    {
+      "sport": "Outdoor Run",
+      "date": "2026-10-28",
+      "name": "Easy Run with 15-Second Strides",
+      "duration": "1:23:58",
+      "labelId": "481359525717246053"
+    },
+    {
+      "sport": "Outdoor Run",
+      "date": "2026-10-24",
+      "name": "Easy Run with 15-Second Strides",
+      "duration": "2:00:00",
+      "labelId": "481266294870540388"
+    },
+    {
+      "sport": "Outdoor Run",
+      "date": "2026-10-22",
+      "name": "Easy Run with 400m Pickups",
+      "duration": "1:25:43",
+      "labelId": "481220114306334721"
+    },
+    {
+      "sport": "Outdoor Run",
+      "date": "2026-10-21",
+      "name": "Dhaka District Run",
+      "duration": "3:30:02",
+      "labelId": "481183987996328035"
+    },
+    {
+      "sport": "Outdoor Run",
+      "date": "2026-10-20",
+      "name": "Easy Run with 15-Second Strides",
+      "duration": "12:23",
+      "labelId": "481174156270928173"
+    },
+    {
+      "sport": "Outdoor Run",
+      "date": "2026-10-20",
+      "name": "Dhaka District Run",
+      "duration": "1:06:36",
+      "labelId": "481174156270928172"
+    },
     {
       "sport": "Outdoor Run",
       "date": "2026-10-18",
@@ -261,6 +366,13 @@
       "sportType": 100
     },
     {
+      "sport": "Cycling",
+      "date": "2026-09-11",
+      "name": "Dhaka District Run",
+      "duration": "2:34:22",
+      "labelId": "480269828096032770"
+    },
+    {
       "sport": "Outdoor Run",
       "date": "2026-09-11",
       "name": "Dhaka District Run",
@@ -309,6 +421,20 @@
       "sportType": 100
     },
     {
+      "sport": "Cycling",
+      "date": "2026-09-08",
+      "name": "Dhaka District Road Bike",
+      "duration": "24:39",
+      "labelId": "480200852531871745"
+    },
+    {
+      "sport": "Cycling",
+      "date": "2026-09-08",
+      "name": "Dhaka District Run",
+      "duration": "21:04",
+      "labelId": "480200852531871744"
+    },
+    {
       "sport": "Outdoor Run",
       "date": "2026-09-06",
       "name": "Dhaka District Run",
@@ -319,6 +445,27 @@
       "calories": 1292,
       "labelId": "480154298301317126",
       "sportType": 100
+    },
+    {
+      "sport": "Open Water Swim",
+      "date": "2026-09-05",
+      "name": "Dhaka District Open Water",
+      "duration": "3:57",
+      "labelId": "480126746354548945"
+    },
+    {
+      "sport": "Open Water Swim",
+      "date": "2026-09-05",
+      "name": "Dhaka District Open Water",
+      "duration": "3:08",
+      "labelId": "480126746354548944"
+    },
+    {
+      "sport": "Open Water Swim",
+      "date": "2026-09-05",
+      "name": "Hatirjheel Ultra 2026",
+      "duration": "2:44",
+      "labelId": "480126746354548943"
     },
     {
       "sport": "Outdoor Run",
@@ -381,6 +528,13 @@
       "sportType": 100
     },
     {
+      "sport": "Open Water Swim",
+      "date": "2026-08-30",
+      "name": "Dhaka District Run",
+      "duration": "19:33",
+      "labelId": "479988001202536548"
+    },
+    {
       "sport": "Outdoor Run",
       "date": "2026-08-28",
       "name": "Dhaka District Run",
@@ -391,6 +545,13 @@
       "calories": 1718,
       "labelId": "479930712244388041",
       "sportType": 100
+    },
+    {
+      "sport": "Open Water Swim",
+      "date": "2026-08-27",
+      "name": "Dhaka District Run",
+      "duration": "16:27",
+      "labelId": "479919309372555565"
     },
     {
       "sport": "Outdoor Run",
@@ -465,6 +626,13 @@
       "sportType": 100
     },
     {
+      "sport": "Open Water Swim",
+      "date": "2026-08-23",
+      "name": "Dhaka District Run",
+      "duration": "38:12",
+      "labelId": "479819164159082498"
+    },
+    {
       "sport": "Outdoor Run",
       "date": "2026-08-21",
       "name": "Dhaka District Run",
@@ -475,6 +643,13 @@
       "calories": 358,
       "labelId": "479781535143199220",
       "sportType": 100
+    },
+    {
+      "sport": "Open Water Swim",
+      "date": "2026-08-21",
+      "name": "Dhaka District Run",
+      "duration": "13:55",
+      "labelId": "479773982443208806"
     },
     {
       "sport": "Outdoor Run",
@@ -537,6 +712,13 @@
       "sportType": 100
     },
     {
+      "sport": "Strength",
+      "date": "2026-08-17",
+      "name": "Dhaka District Run",
+      "duration": "13:58",
+      "labelId": "479702111802655221"
+    },
+    {
       "sport": "Outdoor Run",
       "date": "2026-08-17",
       "name": "Dhaka District Run",
@@ -559,6 +741,13 @@
       "calories": 1076,
       "labelId": "479678315804786990",
       "sportType": 100
+    },
+    {
+      "sport": "Open Water Swim",
+      "date": "2026-08-15",
+      "name": "6k Easy + 6 Strides",
+      "duration": "29:02",
+      "labelId": "479637683528826881"
     },
     {
       "sport": "Outdoor Run",
@@ -621,6 +810,13 @@
       "sportType": 100
     },
     {
+      "sport": "Open Water Swim",
+      "date": "2026-08-12",
+      "name": "8k Easy + 6 Strides",
+      "duration": "13:19",
+      "labelId": "479563996653977906"
+    },
+    {
       "sport": "Outdoor Run",
       "date": "2026-08-12",
       "name": "8k Easy + 6 Strides",
@@ -643,6 +839,20 @@
       "calories": 632,
       "labelId": "479540593645617453",
       "sportType": 100
+    },
+    {
+      "sport": "Open Water Swim",
+      "date": "2026-08-10",
+      "name": "Dhaka District Open Water",
+      "duration": "34:37",
+      "labelId": "479518736288612454"
+    },
+    {
+      "sport": "Open Water Swim",
+      "date": "2026-08-09",
+      "name": "Sylhet Run",
+      "duration": "15:37",
+      "labelId": "479505879310303732"
     },
     {
       "sport": "Outdoor Run",
@@ -669,6 +879,13 @@
       "sportType": 100
     },
     {
+      "sport": "Open Water Swim",
+      "date": "2026-08-01",
+      "name": "Dhaka District Run",
+      "duration": "7:30",
+      "labelId": "479342761819013226"
+    },
+    {
       "sport": "Outdoor Run",
       "date": "2026-07-31",
       "name": "Dhaka District Run",
@@ -693,6 +910,48 @@
       "sportType": 100
     },
     {
+      "sport": "Cycling",
+      "date": "2026-07-31",
+      "name": "Dhaka District Road Bike",
+      "duration": "18:01",
+      "labelId": "479294886625968234"
+    },
+    {
+      "sport": "Cycling",
+      "date": "2026-07-31",
+      "name": "Dhaka District Road Bike",
+      "duration": "15:00",
+      "labelId": "479294886625968232"
+    },
+    {
+      "sport": "Cycling",
+      "date": "2026-07-31",
+      "name": "Dhaka District Road Bike",
+      "duration": "14:32",
+      "labelId": "479280937914368504"
+    },
+    {
+      "sport": "Cycling",
+      "date": "2026-07-31",
+      "name": "Dhaka District Road Bike",
+      "duration": "31:52",
+      "labelId": "479280281583386630"
+    },
+    {
+      "sport": "Cycling",
+      "date": "2026-07-31",
+      "name": "Dhaka District Road Bike",
+      "duration": "17:48",
+      "labelId": "479280281583386628"
+    },
+    {
+      "sport": "Cycling",
+      "date": "2026-07-30",
+      "name": "Dhaka District Run",
+      "duration": "49:59",
+      "labelId": "479269384452341863"
+    },
+    {
       "sport": "Outdoor Run",
       "date": "2026-07-29",
       "name": "Dhaka District Run",
@@ -703,6 +962,13 @@
       "calories": 2779,
       "labelId": "479236603917664761",
       "sportType": 100
+    },
+    {
+      "sport": "Open Water Swim",
+      "date": "2026-07-28",
+      "name": "Dhaka District Run",
+      "duration": "15:36",
+      "labelId": "479218002147967076"
     },
     {
       "sport": "Outdoor Run",
@@ -753,6 +1019,13 @@
       "sportType": 100
     },
     {
+      "sport": "Open Water Swim",
+      "date": "2026-07-25",
+      "name": "Dhaka District Run",
+      "duration": "31:21",
+      "labelId": "479143890870370510"
+    },
+    {
       "sport": "Outdoor Run",
       "date": "2026-07-25",
       "name": "Dhaka District Run",
@@ -775,6 +1048,13 @@
       "calories": 952,
       "labelId": "479118798333444102",
       "sportType": 100
+    },
+    {
+      "sport": "Cycling",
+      "date": "2026-07-23",
+      "name": "Dhaka District Run",
+      "duration": "1:51:55",
+      "labelId": "479105423538946051"
     },
     {
       "sport": "Outdoor Run",
@@ -811,6 +1091,13 @@
       "calories": 337,
       "labelId": "479027090308497615",
       "sportType": 100
+    },
+    {
+      "sport": "Open Water Swim",
+      "date": "2026-07-20",
+      "name": "Dhaka District Run",
+      "duration": "13:22",
+      "labelId": "479027090308497612"
     },
     {
       "sport": "Outdoor Run",
@@ -945,6 +1232,27 @@
       "sportType": 101
     },
     {
+      "sport": "Cycling",
+      "date": "2026-07-10",
+      "name": "Dhaka District Road Bike",
+      "duration": "1:14:33",
+      "labelId": "478796023221747712"
+    },
+    {
+      "sport": "Cycling",
+      "date": "2026-07-10",
+      "name": "Dhaka District Road Bike",
+      "duration": "21:10",
+      "labelId": "478796022953312564"
+    },
+    {
+      "sport": "Cycling",
+      "date": "2026-07-10",
+      "name": "Dhaka District Run",
+      "duration": "1:15:13",
+      "labelId": "478796022953312563"
+    },
+    {
       "sport": "Outdoor Run",
       "date": "2026-07-09",
       "name": "Dhaka District Run",
@@ -1077,6 +1385,13 @@
       "sportType": 100
     },
     {
+      "sport": "Cycling",
+      "date": "2026-06-26",
+      "name": "Dhaka District Run",
+      "duration": "1:12:57",
+      "labelId": "478470927743484109"
+    },
+    {
       "sport": "Outdoor Run",
       "date": "2026-06-26",
       "name": "Dhaka District Run",
@@ -1087,6 +1402,13 @@
       "calories": 1074,
       "labelId": "478470927743484108",
       "sportType": 100
+    },
+    {
+      "sport": "Cycling",
+      "date": "2026-06-26",
+      "name": "Indoor Run",
+      "duration": "47:12",
+      "labelId": "478470927743484107"
     },
     {
       "sport": "Indoor Run",
@@ -1171,6 +1493,13 @@
       "calories": 471,
       "labelId": "478275027037356235",
       "sportType": 100
+    },
+    {
+      "sport": "Cycling",
+      "date": "2026-06-17",
+      "name": "Dhaka District Run",
+      "duration": "1:32:31",
+      "labelId": "478268429967589578"
     },
     {
       "sport": "Outdoor Run",
@@ -1305,6 +1634,13 @@
       "sportType": 100
     },
     {
+      "sport": "Walk",
+      "date": "2026-05-29",
+      "name": "Noakhali District Run",
+      "duration": "44:05",
+      "labelId": "477830992380330186"
+    },
+    {
       "sport": "Outdoor Run",
       "date": "2026-05-27",
       "name": "Noakhali District Run",
@@ -1387,6 +1723,13 @@
       "calories": 974,
       "labelId": "477601753611665610",
       "sportType": 100
+    },
+    {
+      "sport": "Cycling",
+      "date": "2026-05-18",
+      "name": "Dhaka District Run",
+      "duration": "1:34:51",
+      "labelId": "477564644815306759"
     },
     {
       "sport": "Outdoor Run",
@@ -1785,6 +2128,13 @@
       "sportType": 100
     },
     {
+      "sport": "Walk",
+      "date": "2026-04-11",
+      "name": "Rangamati Hill District Run",
+      "duration": "29:05",
+      "labelId": "476705316883431630"
+    },
+    {
       "sport": "Outdoor Run",
       "date": "2026-04-10",
       "name": "Rangamati Hill District Run",
@@ -1891,6 +2241,13 @@
       "calories": 1138,
       "labelId": "476382171330805770",
       "sportType": 100
+    },
+    {
+      "sport": "Strength",
+      "date": "2026-03-12",
+      "name": "5k Easy",
+      "duration": "1:06:41",
+      "labelId": "476006707435176037"
     },
     {
       "sport": "Outdoor Run",
@@ -2049,6 +2406,13 @@
       "sportType": 100
     },
     {
+      "sport": "Cycling",
+      "date": "2026-02-18",
+      "name": "Tempo",
+      "duration": "1:17:26",
+      "labelId": "475516411148534161"
+    },
+    {
       "sport": "Outdoor Run",
       "date": "2026-02-13",
       "name": "Tempo",
@@ -2193,6 +2557,13 @@
       "sportType": 100
     },
     {
+      "sport": "Strength",
+      "date": "2026-01-28",
+      "name": "Intervals 2",
+      "duration": "1:18:46",
+      "labelId": "475023407690318125"
+    },
+    {
       "sport": "Outdoor Run",
       "date": "2026-01-27",
       "name": "Intervals 2",
@@ -2241,6 +2612,13 @@
       "sportType": 100
     },
     {
+      "sport": "Cycling",
+      "date": "2026-01-24",
+      "name": "Intervals",
+      "duration": "1:55:09",
+      "labelId": "474933838563279050"
+    },
+    {
       "sport": "Outdoor Run",
       "date": "2026-01-23",
       "name": "Intervals",
@@ -2263,6 +2641,13 @@
       "calories": 693,
       "labelId": "474874700902727687",
       "sportType": 100
+    },
+    {
+      "sport": "Jump Rope",
+      "date": "2026-01-21",
+      "name": "Lactate threshold interval training",
+      "duration": "43:27",
+      "labelId": "474860896596820070"
     },
     {
       "sport": "Outdoor Run",
@@ -2397,6 +2782,13 @@
       "sportType": 100
     },
     {
+      "sport": "Cycling",
+      "date": "2026-01-03",
+      "name": "Dhaka District Run",
+      "duration": "40:48",
+      "labelId": "474434646875078757"
+    },
+    {
       "sport": "Outdoor Run",
       "date": "2026-01-03",
       "name": "Dhaka District Run",
@@ -2407,6 +2799,13 @@
       "calories": 944,
       "labelId": "474433412598366314",
       "sportType": 100
+    },
+    {
+      "sport": "Cycling",
+      "date": "2026-01-03",
+      "name": "Dhaka District Run",
+      "duration": "38:12",
+      "labelId": "474432051896942593"
     },
     {
       "sport": "Outdoor Run",
@@ -2431,6 +2830,20 @@
       "calories": 4586,
       "labelId": "474272493325025380",
       "sportType": 103
+    },
+    {
+      "sport": "Cycling",
+      "date": "2025-12-25",
+      "name": "Jump Rope",
+      "duration": "13:52",
+      "labelId": "474259230734450897"
+    },
+    {
+      "sport": "Jump Rope",
+      "date": "2025-12-25",
+      "name": "Dhaka District Run",
+      "duration": "49:03",
+      "labelId": "474233098813342098"
     },
     {
       "sport": "Outdoor Run",
@@ -2467,6 +2880,13 @@
       "calories": 1140,
       "labelId": "474040368327852134",
       "sportType": 100
+    },
+    {
+      "sport": "Cycling",
+      "date": "2025-12-16",
+      "name": "Dhaka District Run",
+      "duration": "2:09:02",
+      "labelId": "474030434068496685"
     },
     {
       "sport": "Outdoor Run",
@@ -2529,6 +2949,13 @@
       "sportType": 101
     },
     {
+      "sport": "Indoor Cycling",
+      "date": "2025-12-11",
+      "name": "Bandarban District Run",
+      "duration": "3:09:48",
+      "labelId": "473907425680850944"
+    },
+    {
       "sport": "Outdoor Run",
       "date": "2025-12-05",
       "name": "Bandarban District Run",
@@ -2539,6 +2966,13 @@
       "calories": 2536,
       "labelId": "473763700237435081",
       "sportType": 100
+    },
+    {
+      "sport": "Walk",
+      "date": "2025-12-03",
+      "name": "Dhaka District Run",
+      "duration": "41:35",
+      "labelId": "473720550567477252"
     },
     {
       "sport": "Outdoor Run",
@@ -2553,6 +2987,13 @@
       "sportType": 100
     },
     {
+      "sport": "Strength",
+      "date": "2025-12-02",
+      "name": "Dhaka District Run",
+      "duration": "1:34:55",
+      "labelId": "473720550567477250"
+    },
+    {
       "sport": "Outdoor Run",
       "date": "2025-12-02",
       "name": "Dhaka District Run",
@@ -2563,6 +3004,13 @@
       "calories": 1088,
       "labelId": "473692394106159407",
       "sportType": 100
+    },
+    {
+      "sport": "Walk",
+      "date": "2025-12-01",
+      "name": "Dhaka District Run",
+      "duration": "34:36",
+      "labelId": "473689847469473793"
     },
     {
       "sport": "Outdoor Run",
@@ -2601,6 +3049,20 @@
       "sportType": 101
     },
     {
+      "sport": "Strength",
+      "date": "2025-11-30",
+      "name": "Strength",
+      "duration": "41:43",
+      "labelId": "473657290264707471"
+    },
+    {
+      "sport": "Strength",
+      "date": "2025-11-29",
+      "name": "Indoor Run",
+      "duration": "36:57",
+      "labelId": "473632997929680901"
+    },
+    {
       "sport": "Indoor Run",
       "date": "2025-11-29",
       "name": "Indoor Run",
@@ -2611,6 +3073,20 @@
       "calories": 399,
       "labelId": "473632997929680900",
       "sportType": 101
+    },
+    {
+      "sport": "Strength",
+      "date": "2025-11-29",
+      "name": "Dhaka District Walk",
+      "duration": "46:01",
+      "labelId": "473632997929680899"
+    },
+    {
+      "sport": "Walk",
+      "date": "2025-11-28",
+      "name": "Dhaka District Run",
+      "duration": "46:01",
+      "labelId": "473602544193536106"
     },
     {
       "sport": "Outdoor Run",
@@ -2625,6 +3101,13 @@
       "sportType": 100
     },
     {
+      "sport": "Strength",
+      "date": "2025-11-27",
+      "name": "Indoor Run",
+      "duration": "36:17",
+      "labelId": "473597115635892225"
+    },
+    {
       "sport": "Indoor Run",
       "date": "2025-11-26",
       "name": "Indoor Run",
@@ -2635,6 +3118,13 @@
       "calories": 443,
       "labelId": "473560541562962022",
       "sportType": 101
+    },
+    {
+      "sport": "Strength",
+      "date": "2025-11-26",
+      "name": "Indoor Run",
+      "duration": "1:00:01",
+      "labelId": "473560541562962021"
     },
     {
       "sport": "Indoor Run",
@@ -2649,6 +3139,20 @@
       "sportType": 101
     },
     {
+      "sport": "Strength",
+      "date": "2025-11-25",
+      "name": "Strength",
+      "duration": "44:29",
+      "labelId": "473537985736900710"
+    },
+    {
+      "sport": "Strength",
+      "date": "2025-11-25",
+      "name": "Indoor Run",
+      "duration": "32:56",
+      "labelId": "473537985736900709"
+    },
+    {
       "sport": "Indoor Run",
       "date": "2025-11-24",
       "name": "Indoor Run",
@@ -2659,6 +3163,13 @@
       "calories": 312,
       "labelId": "473522312593834088",
       "sportType": 101
+    },
+    {
+      "sport": "Strength",
+      "date": "2025-11-24",
+      "name": "Dhaka District Run",
+      "duration": "55:05",
+      "labelId": "473522312593834087"
     },
     {
       "sport": "Outdoor Run",
@@ -2697,6 +3208,20 @@
       "sportType": 101
     },
     {
+      "sport": "Strength",
+      "date": "2025-11-22",
+      "name": "Gym Cardio",
+      "duration": "4:28",
+      "labelId": "473469435911372902"
+    },
+    {
+      "sport": "Gym Cardio",
+      "date": "2025-11-22",
+      "name": "Dhaka District Run",
+      "duration": "1:39:14",
+      "labelId": "473469435911372901"
+    },
+    {
       "sport": "Outdoor Run",
       "date": "2025-11-21",
       "name": "Dhaka District Run",
@@ -2721,6 +3246,20 @@
       "sportType": 101
     },
     {
+      "sport": "Strength",
+      "date": "2025-11-18",
+      "name": "Dhaka District Walk",
+      "duration": "28:11",
+      "labelId": "473376736032096357"
+    },
+    {
+      "sport": "Walk",
+      "date": "2025-11-16",
+      "name": "Dhaka District Run",
+      "duration": "28:11",
+      "labelId": "473327272760213808"
+    },
+    {
       "sport": "Outdoor Run",
       "date": "2025-11-16",
       "name": "Dhaka District Run",
@@ -2731,6 +3270,13 @@
       "calories": 985,
       "labelId": "473320928569229313",
       "sportType": 100
+    },
+    {
+      "sport": "Cycling",
+      "date": "2025-11-15",
+      "name": "Dhaka District Run",
+      "duration": "2:21:33",
+      "labelId": "473300118903226370"
     },
     {
       "sport": "Outdoor Run",
@@ -2745,6 +3291,13 @@
       "sportType": 100
     },
     {
+      "sport": "Strength",
+      "date": "2025-11-13",
+      "name": "Indoor Run",
+      "duration": "21:01",
+      "labelId": "473265245381492836"
+    },
+    {
       "sport": "Indoor Run",
       "date": "2025-11-13",
       "name": "Indoor Run",
@@ -2755,6 +3308,13 @@
       "calories": 211,
       "labelId": "473264368144908290",
       "sportType": 101
+    },
+    {
+      "sport": "Walk",
+      "date": "2025-11-13",
+      "name": "Dhaka District Run",
+      "duration": "24:45",
+      "labelId": "473256347549335754"
     },
     {
       "sport": "Outdoor Run",
@@ -2793,6 +3353,13 @@
       "sportType": 101
     },
     {
+      "sport": "Strength",
+      "date": "2025-11-11",
+      "name": "Indoor Run",
+      "duration": "1:00:03",
+      "labelId": "473212089524060166"
+    },
+    {
       "sport": "Indoor Run",
       "date": "2025-11-10",
       "name": "Indoor Run",
@@ -2805,6 +3372,13 @@
       "sportType": 101
     },
     {
+      "sport": "Strength",
+      "date": "2025-11-10",
+      "name": "Indoor Run",
+      "duration": "45:02",
+      "labelId": "473189861187158117"
+    },
+    {
       "sport": "Indoor Run",
       "date": "2025-11-09",
       "name": "Indoor Run",
@@ -2815,6 +3389,13 @@
       "calories": 639,
       "labelId": "473166684738322432",
       "sportType": 101
+    },
+    {
+      "sport": "Strength",
+      "date": "2025-11-09",
+      "name": "Indoor Run",
+      "duration": "42:48",
+      "labelId": "473165910302031873"
     },
     {
       "sport": "Indoor Run",
@@ -2876,5 +3457,22 @@
       "labelId": "472974017886715905",
       "sportType": 100
     }
-  ]
+  ],
+  "profile": {
+    "heightCm": 186,
+    "weightKg": 81,
+    "birthday": "1994-02-20",
+    "age": 32,
+    "gender": "Male",
+    "device": "COROS PACE 3"
+  },
+  "fitnessAssessment": "Fitness Assessment Overview\n========================\n\nVO2max: 43\nRunning Level: 65\nThreshold Pace: 6:06 /km\n5 km Prediction: 29:29\n10 km Prediction: 1:02:31\nHalf Marathon Prediction: 2:22:29\nMarathon Prediction: 5:06:10",
+  "currentRecovery": "Recovery Status\n========================\n\nRecovery: 95%\nLevel: Fresh\nEstimated Full Recovery: 13h",
+  "trainingLoadLast30Days": "Training Load Assessment\n========================\n\n2026-11-13\nComment: Optimized\nShort-Term Load: 143\nLong-Term Load: 102\nLoad Ratio: 1.40\n\n2026-11-12\nComment: Optimized\nShort-Term Load: 140\nLong-Term Load: 100\nLoad Ratio: 1.40\n\n2026-11-11\nComment: Excessive\nShort-Term Load: 164\nLong-Term Load: 103\nLoad Ratio: 1.59\n\n2026-11-10\nComment: Excessive\nShort-Term Load: 168\nLong-Term Load: 102\nLoad Ratio: 1.64\n\n2026-11-09\nComment: Excessive\nShort-Term Load: 185\nLong-Term Load: 102\nLoad Ratio: 1.81\n\n2026-11-08\nComment: Excessive\nShort-Term Load: 204\nLong-Term Load: 103\nLoad Ratio: 1.98\n\n2026-11-07\nComment: Excessive\nShort-Term Load: 238\nLong-Term Load: 106\nLoad Ratio: 2.24\n\n2026-11-06\nComment: Excessive\nShort-Term Load: 277\nLong-Term Load: 108\nLoad Ratio: 2.56\n\n2026-11-05\nComment: Excessive\nShort-Term Load: 156\nLong-Term Load: 102\nLoad Ratio: 1.52\n\n2026-11-04\nComment: Excessive\nShort-Term Load: 182\nLong-Term Load: 104\nLoad Ratio: 1.75\n\n2026-11-03\nComment: Excessive\nShort-Term Load: 189\nLong-Term Load: 103\nLoad Ratio: 1.83\n\n2026-11-02\nComment: Excessive\nShort-Term Load: 220\nLong-Term Load: 106\nLoad Ratio: 2.07\n\n2026-11-01\nComment: Excessive\nShort-Term Load: 230\nLong-Term Load: 104\nLoad Ratio: 2.21\n\n2026-10-31\nComment: Excessive\nShort-Term Load: 268\nLong-Term Load: 107\nLoad Ratio: 2.50\n\n2026-10-30\nComment: Maintaining\nShort-Term Load: 87\nLong-Term Load: 100\nLoad Ratio: 0.87\n\n2026-10-29\nComment: Maintaining\nShort-Term Load: 101\nLong-Term Load: 102\nLoad Ratio: 0.99\n\n2026-10-28\nComment: Optimized\nShort-Term Load: 118\nLong-Term Load: 105\nLoad Ratio: 1.12\n\n2026-10-27\nComment: Maintaining\nShort-Term Load: 92\nLong-Term Load: 101\nLoad Ratio: 0.91\n\n2026-10-26\nComment: Optimized\nShort-Term Load: 107\nLong-Term Load: 104\nLoad Ratio: 1.02\n\n2026-10-25\nComment: Optimized\nShort-Term Load: 125\nLong-Term Load: 106\nLoad Ratio: 1.17\n\n2026-10-24\nComment: Optimized\nShort-Term Load: 146\nLong-Term Load: 109\nLoad Ratio: 1.33\n\n2026-10-23\nComment: Optimized\nShort-Term Load: 127\nLong-Term Load: 103\nLoad Ratio: 1.23\n\n2026-10-22\nComment: Optimized\nShort-Term Load: 148\nLong-Term Load: 106\nLoad Ratio: 1.39\n\n2026-10-21\nComment: Optimized\nShort-Term Load: 142\nLong-Term Load: 103\nLoad Ratio: 1.37\n\n2026-10-20\nComment: Optimized\nShort-Term Load: 104\nLong-Term Load: 95\nLoad Ratio: 1.09\n\n2026-10-19\nComment: Optimized\nShort-Term Load: 95\nLong-Term Load: 93\nLoad Ratio: 1.02\n\n2026-10-18\nComment: Optimized\nShort-Term Load: 111\nLong-Term Load: 95\nLoad Ratio: 1.16\n\n2026-10-17\nComment: Performance\nShort-Term Load: 65\nLong-Term Load: 85\nLoad Ratio: 0.76\n\n2026-10-16\nComment: Maintaining\nShort-Term Load: 76\nLong-Term Load: 87\nLoad Ratio: 0.87\n\n2026-10-15\nComment: Resuming\nShort-Term Load: 40\nLong-Term Load: 79\nLoad Ratio: 0.50",
+  "restingHeartRateLast30Days": "Resting Heart Rate — Last 30 days\n========================\n\n2026-11-13: 50 bpm\n2026-11-12: 48 bpm\n2026-11-11: No data\n2026-11-10: 50 bpm\n2026-11-09: 52 bpm\n2026-11-08: 54 bpm\n2026-11-07: 77 bpm\n2026-11-06: No data\n2026-11-04: No data\n2026-11-02: No data\n2026-10-31: 50 bpm\n2026-10-30: No data\n2026-10-29: 53 bpm\n2026-10-28: No data\n2026-10-27: 53 bpm\n2026-10-25: 50 bpm\n2026-10-24: 51 bpm\n2026-10-23: No data\n2026-10-22: No data\n2026-10-21: 60 bpm\n2026-10-20: 50 bpm\n2026-10-19: 50 bpm\n2026-10-18: 55 bpm\n2026-10-17: No data\n2026-10-16: No data\n2026-10-15: No data",
+  "averageHeartRateLast30Days": "Average Heart Rate — Last 30 days\n========================\n\n2026-11-13: 73 bpm (Min: 38, Max: 156)\n2026-11-12: 58 bpm (Min: 34, Max: 88)\n2026-11-11: 111 bpm (Min: 66, Max: 142)\n2026-11-10: 57 bpm (Min: 33, Max: 135)\n2026-11-09: 60 bpm (Min: 40, Max: 158)\n2026-11-08: 58 bpm (Min: 39, Max: 79)\n2026-11-07: 63 bpm (Min: 43, Max: 76)\n2026-11-06: 127 bpm (Min: 38, Max: 176)\n2026-11-04: 125 bpm (Min: 57, Max: 151)\n2026-11-02: 125 bpm (Min: 54, Max: 151)\n2026-10-31: 116 bpm (Min: 41, Max: 179)\n2026-10-30: 69 bpm (Min: 41, Max: 112)\n2026-10-29: 56 bpm (Min: 41, Max: 85)\n2026-10-28: 92 bpm (Min: 49, Max: 153)\n2026-10-27: 57 bpm (Min: 41, Max: 94)\n2026-10-25: 51 bpm (Min: 40, Max: 68)\n2026-10-24: 73 bpm (Min: 41, Max: 163)\n2026-10-23: 69 bpm (Min: 69, Max: 69)\n2026-10-22: 117 bpm (Min: 61, Max: 161)\n2026-10-21: 90 bpm (Min: 45, Max: 159)\n2026-10-20: 66 bpm (Min: 40, Max: 152)\n2026-10-19: 52 bpm (Min: 37, Max: 94)\n2026-10-18: 94 bpm (Min: 45, Max: 155)\n2026-10-17: 63 bpm (Min: 58, Max: 66)\n2026-10-16: 144 bpm (Min: 82, Max: 183)\n2026-10-15: 63 bpm (Min: 63, Max: 63)",
+  "sleepHrvLast7Days": "Sleep HRV — 2026-11-07 to 2026-11-13\n========================\nNote: dates are wake-up days (each value comes from the night that ended that morning).\n\nHRV Assessment — Last 7 days\n========================\n\n2026-11-13:\n  HRV Avg: 78 ms — Normal\n  Normal Range: 72 - 94 ms\n  Baseline: 83 ms\n2026-11-12:\n  HRV Avg: 90 ms — Normal\n  Normal Range: 71 - 95 ms\n  Baseline: 83 ms\n2026-11-10:\n  HRV Avg: 99 ms — Above normal\n  Normal Range: 72 - 94 ms\n  Baseline: 83 ms\n2026-11-09:\n  HRV Avg: 79 ms — Normal\n  Normal Range: 71 - 95 ms\n  Baseline: 83 ms\n2026-11-08:\n  HRV Avg: 79 ms — Normal\n  Normal Range: 72 - 94 ms\n  Baseline: 83 ms\n2026-11-07:\n  No data\n\nSleep HRV Time Series — Last 7 days\n========================\n\n2026-11-07: no official sleep HRV value for this day; raw HRV points omitted.\n2026-11-08:\n  timestamp=1794076490, timezone=24, hrv=51 ms, status=4, confidence=100000\n  timestamp=1794078890, timezone=24, hrv=44 ms, status=4, confidence=100000\n  timestamp=1794079790, timezone=24, hrv=71 ms, status=4, confidence=88505\n  timestamp=1794080690, timezone=24, hrv=80 ms, status=4, confidence=82818\n  timestamp=1794080990, timezone=24, hrv=73 ms, status=4, confidence=90909\n  timestamp=1794081890, timezone=24, hrv=57 ms, status=4, confidence=100000\n  timestamp=1794082490, timezone=24, hrv=105 ms, status=4, confidence=100000\n  timestamp=1794083090, timezone=24, hrv=87 ms, status=4, confidence=100000\n  timestamp=1794083690, timezone=24, hrv=66 ms, status=4, confidence=100000\n  timestamp=1794084290, timezone=24, hrv=107 ms, status=4, confidence=100000\n  timestamp=1794084890, timezone=24, hrv=63 ms, status=4, confidence=100000\n  timestamp=1794085790, timezone=24, hrv=65 ms, status=4, confidence=85714\n  timestamp=1794086390, timezone=24, hrv=142 ms, status=4, confidence=86561\n  timestamp=1794086990, timezone=24, hrv=79 ms, status=4, confidence=96296\n  timestamp=1794087590, timezone=24, hrv=56 ms, status=4, confidence=100000\n  timestamp=1794088190, timezone=24, hrv=72 ms, status=4, confidence=85941\n  timestamp=1794089090, timezone=24, hrv=103 ms, status=4, confidence=95652\n  timestamp=1794090890, timezone=24, hrv=93 ms, status=4, confidence=96000\n  timestamp=1794091790, timezone=24, hrv=69 ms, status=4, confidence=100000\n  timestamp=1794092390, timezone=24, hrv=66 ms, status=4, confidence=100000\n  timestamp=1794092990, timezone=24, hrv=73 ms, status=4, confidence=100000\n  timestamp=1794093590, timezone=24, hrv=58 ms, status=4, confidence=100000\n  timestamp=1794094190, timezone=24, hrv=71 ms, status=4, confidence=100000\n  timestamp=1794095690, timezone=24, hrv=89 ms, status=4, confidence=91304\n  timestamp=1794097490, timezone=24, hrv=98 ms, status=4, confidence=95000\n  timestamp=1794098090, timezone=24, hrv=106 ms, status=4, confidence=100000\n  timestamp=1794100190, timezone=24, hrv=86 ms, status=4, confidence=100000\n  timestamp=1794102290, timezone=24, hrv=44 ms, status=4, confidence=100000\n  timestamp=1794102590, timezone=24, hrv=48 ms, status=4, confidence=100000\n  timestamp=1794103190, timezone=24, hrv=35 ms, status=4, confidence=100000\n  timestamp=1794103790, timezone=24, hrv=69 ms, status=4, confidence=100000\n  timestamp=1794104390, timezone=24, hrv=91 ms, status=4, confidence=100000\n  timestamp=1794104990, timezone=24, hrv=108 ms, status=4, confidence=95238\n  timestamp=1794106490, timezone=24, hrv=58 ms, status=4, confidence=100000\n  timestamp=1794107090, timezone=24, hrv=77 ms, status=4, confidence=96153\n  timestamp=1794107690, timezone=24, hrv=78 ms, status=4, confidence=100000\n  timestamp=1794108290, timezone=24, hrv=103 ms, status=4, confidence=88888\n  timestamp=1794108890, timezone=24, hrv=106 ms, status=4, confidence=88000\n  timestamp=1794109490, timezone=24, hrv=74 ms, status=4, confidence=100000\n  timestamp=1794110090, timezone=24, hrv=98 ms, status=4, confidence=89285\n  timestamp=1794110990, timezone=24, hrv=116 ms, status=4, confidence=91666\n  timestamp=1794111290, timezone=24, hrv=67 ms, status=4, confidence=86842\n  timestamp=1794153290, timezone=24, hrv=53 ms, status=4, confidence=85294\n  timestamp=1794154790, timezone=24, hrv=50 ms, status=4, confidence=97142\n  timestamp=1794156890, timezone=24, hrv=42 ms, status=4, confidence=100000\n  timestamp=1794157490, timezone=24, hrv=71 ms, status=4, confidence=94117\n  timestamp=1794160790, timezone=24, hrv=56 ms, status=4, confidence=96666\n2026-11-09:\n  timestamp=1794162890, timezone=24, hrv=55 ms, status=4, confidence=100000\n  timestamp=1794163190, timezone=24, hrv=58 ms, status=4, confidence=89778\n  timestamp=1794163490, timezone=24, hrv=48 ms, status=4, confidence=100000\n  timestamp=1794163790, timezone=24, hrv=36 ms, status=4, confidence=100000\n  timestamp=1794164690, timezone=24, hrv=66 ms, status=4, confidence=100000\n  timestamp=1794165890, timezone=24, hrv=62 ms, status=4, confidence=100000\n  timestamp=1794166490, timezone=24, hrv=66 ms, status=4, confidence=83306\n  timestamp=1794167090, timezone=24, hrv=88 ms, status=4, confidence=100000\n  timestamp=1794168590, timezone=24, hrv=81 ms, status=4, confidence=100000\n  timestamp=1794169190, timezone=24, hrv=88 ms, status=4, confidence=100000\n  timestamp=1794169790, timezone=24, hrv=52 ms, status=4, confidence=100000\n  timestamp=1794170390, timezone=24, hrv=72 ms, status=4, confidence=100000\n  timestamp=1794171290, timezone=24, hrv=89 ms, status=4, confidence=100000\n  timestamp=1794171890, timezone=24, hrv=121 ms, status=4, confidence=90909\n  timestamp=1794172490, timezone=24, hrv=81 ms, status=4, confidence=100000\n  timestamp=1794173090, timezone=24, hrv=117 ms, status=4, confidence=90476\n  timestamp=1794174290, timezone=24, hrv=36 ms, status=4, confidence=100000\n  timestamp=1794174890, timezone=24, hrv=48 ms, status=4, confidence=97058\n  timestamp=1794175490, timezone=24, hrv=54 ms, status=4, confidence=100000\n  timestamp=1794175790, timezone=24, hrv=62 ms, status=4, confidence=100000\n  timestamp=1794176390, timezone=24, hrv=48 ms, status=4, confidence=100000\n  timestamp=1794176990, timezone=24, hrv=96 ms, status=4, confidence=83664\n  timestamp=1794177890, timezone=24, hrv=88 ms, status=4, confidence=88000\n  timestamp=1794179090, timezone=24, hrv=93 ms, status=4, confidence=83882\n  timestamp=1794179690, timezone=24, hrv=82 ms, status=4, confidence=100000\n  timestamp=1794180290, timezone=24, hrv=101 ms, status=4, confidence=100000\n  timestamp=1794181190, timezone=24, hrv=81 ms, status=4, confidence=95454\n  timestamp=1794181790, timezone=24, hrv=78 ms, status=4, confidence=100000\n  timestamp=1794182990, timezone=24, hrv=91 ms, status=4, confidence=100000\n  timestamp=1794183590, timezone=24, hrv=69 ms, status=4, confidence=100000\n  timestamp=1794185090, timezone=24, hrv=87 ms, status=4, confidence=100000\n  timestamp=1794185690, timezone=24, hrv=46 ms, status=4, confidence=100000\n  timestamp=1794186290, timezone=24, hrv=101 ms, status=4, confidence=100000\n  timestamp=1794186890, timezone=24, hrv=82 ms, status=4, confidence=100000\n  timestamp=1794187490, timezone=24, hrv=108 ms, status=4, confidence=91666\n  timestamp=1794188090, timezone=24, hrv=106 ms, status=4, confidence=95652\n  timestamp=1794188990, timezone=24, hrv=76 ms, status=4, confidence=100000\n  timestamp=1794189590, timezone=24, hrv=122 ms, status=4, confidence=86363\n  timestamp=1794190190, timezone=24, hrv=87 ms, status=4, confidence=86956\n  timestamp=1794190790, timezone=24, hrv=82 ms, status=4, confidence=100000\n  timestamp=1794191390, timezone=24, hrv=89 ms, status=4, confidence=92307\n  timestamp=1794191990, timezone=24, hrv=83 ms, status=4, confidence=100000\n  timestamp=1794192590, timezone=24, hrv=88 ms, status=4, confidence=95652\n  timestamp=1794193490, timezone=24, hrv=87 ms, status=4, confidence=85714\n  timestamp=1794194090, timezone=24, hrv=69 ms, status=4, confidence=87500\n  timestamp=1794194690, timezone=24, hrv=67 ms, status=4, confidence=85192\n  timestamp=1794195890, timezone=24, hrv=66 ms, status=4, confidence=82782\n  timestamp=1794196190, timezone=24, hrv=77 ms, status=4, confidence=100000\n  timestamp=1794196790, timezone=24, hrv=81 ms, status=4, confidence=88888\n  timestamp=1794197390, timezone=24, hrv=54 ms, status=4, confidence=100000\n  timestamp=1794198890, timezone=24, hrv=151 ms, status=4, confidence=89473\n  timestamp=1794199490, timezone=24, hrv=122 ms, status=4, confidence=86956\n  timestamp=1794200090, timezone=24, hrv=85 ms, status=4, confidence=85185\n  timestamp=1794200690, timezone=24, hrv=72 ms, status=4, confidence=96551\n  timestamp=1794201290, timezone=24, hrv=59 ms, status=4, confidence=100000\n  timestamp=1794202190, timezone=24, hrv=78 ms, status=4, confidence=96153\n  timestamp=1794202790, timezone=24, hrv=101 ms, status=4, confidence=89916\n  timestamp=1794203390, timezone=24, hrv=99 ms, status=4, confidence=100000\n  timestamp=1794228590, timezone=24, hrv=57 ms, status=4, confidence=96551\n  timestamp=1794229790, timezone=24, hrv=47 ms, status=4, confidence=90100\n  timestamp=1794231890, timezone=24, hrv=43 ms, status=4, confidence=100000\n  timestamp=1794232490, timezone=24, hrv=38 ms, status=4, confidence=100000\n  timestamp=1794233090, timezone=24, hrv=37 ms, status=4, confidence=100000\n  timestamp=1794243290, timezone=24, hrv=33 ms, status=4, confidence=100000\n  timestamp=1794244190, timezone=24, hrv=56 ms, status=4, confidence=100000\n  timestamp=1794244490, timezone=24, hrv=70 ms, status=4, confidence=92592\n  timestamp=1794245090, timezone=24, hrv=94 ms, status=4, confidence=100000\n  timestamp=1794245690, timezone=24, hrv=70 ms, status=4, confidence=100000\n  timestamp=1794246290, timezone=24, hrv=94 ms, status=4, confidence=85185\n2026-11-10:\n  timestamp=1794249890, timezone=24, hrv=79 ms, status=4, confidence=100000\n  timestamp=1794250490, timezone=24, hrv=116 ms, status=4, confidence=91666\n  timestamp=1794251090, timezone=24, hrv=78 ms, status=4, confidence=100000\n  timestamp=1794251690, timezone=24, hrv=75 ms, status=4, confidence=100000\n  timestamp=1794252290, timezone=24, hrv=92 ms, status=4, confidence=100000\n  timestamp=1794253490, timezone=24, hrv=107 ms, status=4, confidence=100000\n  timestamp=1794254390, timezone=24, hrv=100 ms, status=4, confidence=100000\n  timestamp=1794254990, timezone=24, hrv=104 ms, status=4, confidence=95454\n  timestamp=1794255590, timezone=24, hrv=87 ms, status=4, confidence=100000\n  timestamp=1794256190, timezone=24, hrv=109 ms, status=4, confidence=100000\n  timestamp=1794257690, timezone=24, hrv=90 ms, status=4, confidence=87318\n  timestamp=1794258290, timezone=24, hrv=94 ms, status=4, confidence=100000\n  timestamp=1794258890, timezone=24, hrv=96 ms, status=4, confidence=91304\n  timestamp=1794260090, timezone=24, hrv=120 ms, status=4, confidence=85714\n  timestamp=1794260690, timezone=24, hrv=120 ms, status=4, confidence=100000\n  timestamp=1794261590, timezone=24, hrv=123 ms, status=4, confidence=83658\n  timestamp=1794262190, timezone=24, hrv=105 ms, status=4, confidence=100000\n  timestamp=1794262790, timezone=24, hrv=173 ms, status=4, confidence=90000\n  timestamp=1794263390, timezone=24, hrv=171 ms, status=4, confidence=90476\n  timestamp=1794263990, timezone=24, hrv=53 ms, status=4, confidence=100000\n  timestamp=1794265190, timezone=24, hrv=80 ms, status=4, confidence=100000\n  timestamp=1794265490, timezone=24, hrv=81 ms, status=4, confidence=100000\n  timestamp=1794266390, timezone=24, hrv=101 ms, status=4, confidence=95652\n  timestamp=1794266990, timezone=24, hrv=105 ms, status=4, confidence=100000\n  timestamp=1794268190, timezone=24, hrv=111 ms, status=4, confidence=100000\n  timestamp=1794269090, timezone=24, hrv=104 ms, status=4, confidence=100000\n  timestamp=1794269690, timezone=24, hrv=81 ms, status=4, confidence=100000\n  timestamp=1794270290, timezone=24, hrv=70 ms, status=4, confidence=100000\n  timestamp=1794270890, timezone=24, hrv=130 ms, status=4, confidence=88409\n  timestamp=1794271490, timezone=24, hrv=71 ms, status=4, confidence=100000\n  timestamp=1794272090, timezone=24, hrv=108 ms, status=4, confidence=91666\n  timestamp=1794272990, timezone=24, hrv=141 ms, status=4, confidence=86363\n  timestamp=1794274190, timezone=24, hrv=136 ms, status=4, confidence=84090\n  timestamp=1794274790, timezone=24, hrv=98 ms, status=4, confidence=100000\n  timestamp=1794275390, timezone=24, hrv=105 ms, status=4, confidence=100000\n  timestamp=1794276290, timezone=24, hrv=126 ms, status=4, confidence=85000\n  timestamp=1794277490, timezone=24, hrv=132 ms, status=4, confidence=95238\n  timestamp=1794278090, timezone=24, hrv=88 ms, status=4, confidence=95652\n  timestamp=1794278690, timezone=24, hrv=111 ms, status=4, confidence=83333\n  timestamp=1794279590, timezone=24, hrv=115 ms, status=4, confidence=100000\n  timestamp=1794280190, timezone=24, hrv=140 ms, status=4, confidence=90476\n  timestamp=1794280790, timezone=24, hrv=94 ms, status=4, confidence=96296\n  timestamp=1794281390, timezone=24, hrv=127 ms, status=4, confidence=90476\n  timestamp=1794281990, timezone=24, hrv=92 ms, status=4, confidence=100000\n  timestamp=1794282590, timezone=24, hrv=84 ms, status=4, confidence=100000\n  timestamp=1794283490, timezone=24, hrv=75 ms, status=4, confidence=100000\n  timestamp=1794284690, timezone=24, hrv=68 ms, status=4, confidence=100000\n  timestamp=1794285290, timezone=24, hrv=89 ms, status=4, confidence=100000\n  timestamp=1794285890, timezone=24, hrv=57 ms, status=4, confidence=100000\n  timestamp=1794286790, timezone=24, hrv=68 ms, status=4, confidence=93103\n  timestamp=1794287090, timezone=24, hrv=73 ms, status=4, confidence=96000\n  timestamp=1794287990, timezone=24, hrv=75 ms, status=4, confidence=100000\n  timestamp=1794288890, timezone=24, hrv=166 ms, status=4, confidence=85714\n  timestamp=1794289190, timezone=24, hrv=69 ms, status=4, confidence=100000\n  timestamp=1794289490, timezone=24, hrv=63 ms, status=4, confidence=100000\n  timestamp=1794293690, timezone=24, hrv=54 ms, status=4, confidence=100000\n2026-11-11: no official sleep HRV value for this day; raw HRV points omitted.\n2026-11-12:\n  timestamp=1794424190, timezone=24, hrv=18 ms, status=4, confidence=100000\n  timestamp=1794425390, timezone=24, hrv=45 ms, status=4, confidence=100000\n  timestamp=1794425990, timezone=24, hrv=54 ms, status=4, confidence=100000\n  timestamp=1794426290, timezone=24, hrv=45 ms, status=4, confidence=100000\n  timestamp=1794426890, timezone=24, hrv=55 ms, status=4, confidence=85784\n  timestamp=1794427490, timezone=24, hrv=42 ms, status=4, confidence=100000\n  timestamp=1794428090, timezone=24, hrv=51 ms, status=4, confidence=100000\n  timestamp=1794428690, timezone=24, hrv=67 ms, status=4, confidence=100000\n  timestamp=1794429590, timezone=24, hrv=79 ms, status=4, confidence=100000\n  timestamp=1794430190, timezone=24, hrv=96 ms, status=4, confidence=100000\n  timestamp=1794430790, timezone=24, hrv=86 ms, status=4, confidence=100000\n  timestamp=1794431390, timezone=24, hrv=66 ms, status=4, confidence=100000\n  timestamp=1794433490, timezone=24, hrv=111 ms, status=4, confidence=95238\n  timestamp=1794434090, timezone=24, hrv=77 ms, status=4, confidence=100000\n  timestamp=1794434690, timezone=24, hrv=84 ms, status=4, confidence=100000\n  timestamp=1794435590, timezone=24, hrv=93 ms, status=4, confidence=90732\n  timestamp=1794436190, timezone=24, hrv=81 ms, status=4, confidence=100000\n  timestamp=1794436790, timezone=24, hrv=95 ms, status=4, confidence=95652\n  timestamp=1794437990, timezone=24, hrv=86 ms, status=4, confidence=95454\n  timestamp=1794438590, timezone=24, hrv=83 ms, status=4, confidence=100000\n  timestamp=1794439490, timezone=24, hrv=126 ms, status=4, confidence=95238\n  timestamp=1794440090, timezone=24, hrv=93 ms, status=4, confidence=100000\n  timestamp=1794440690, timezone=24, hrv=94 ms, status=4, confidence=85411\n  timestamp=1794441290, timezone=24, hrv=98 ms, status=4, confidence=100000\n  timestamp=1794442190, timezone=24, hrv=86 ms, status=4, confidence=100000\n  timestamp=1794442790, timezone=24, hrv=74 ms, status=4, confidence=100000\n  timestamp=1794443390, timezone=24, hrv=152 ms, status=4, confidence=94736\n  timestamp=1794443990, timezone=24, hrv=86 ms, status=4, confidence=100000\n  timestamp=1794444590, timezone=24, hrv=51 ms, status=4, confidence=90322\n  timestamp=1794445490, timezone=24, hrv=100 ms, status=4, confidence=90909\n  timestamp=1794446090, timezone=24, hrv=115 ms, status=4, confidence=100000\n  timestamp=1794446690, timezone=24, hrv=105 ms, status=4, confidence=100000\n  timestamp=1794447290, timezone=24, hrv=87 ms, status=4, confidence=100000\n  timestamp=1794448490, timezone=24, hrv=63 ms, status=4, confidence=100000\n  timestamp=1794449090, timezone=24, hrv=115 ms, status=4, confidence=100000\n  timestamp=1794449990, timezone=24, hrv=102 ms, status=4, confidence=100000\n  timestamp=1794450590, timezone=24, hrv=109 ms, status=4, confidence=100000\n  timestamp=1794453290, timezone=24, hrv=114 ms, status=4, confidence=100000\n  timestamp=1794453890, timezone=24, hrv=106 ms, status=4, confidence=95454\n  timestamp=1794454490, timezone=24, hrv=123 ms, status=4, confidence=89473\n  timestamp=1794455390, timezone=24, hrv=136 ms, status=4, confidence=94736\n  timestamp=1794456590, timezone=24, hrv=130 ms, status=4, confidence=90909\n  timestamp=1794457190, timezone=24, hrv=134 ms, status=4, confidence=100000\n  timestamp=1794457790, timezone=24, hrv=59 ms, status=4, confidence=100000\n  timestamp=1794458690, timezone=24, hrv=101 ms, status=4, confidence=81287\n  timestamp=1794459290, timezone=24, hrv=157 ms, status=4, confidence=87301\n  timestamp=1794461390, timezone=24, hrv=46 ms, status=4, confidence=93711\n  timestamp=1794463790, timezone=24, hrv=46 ms, status=4, confidence=100000\n  timestamp=1794502790, timezone=24, hrv=43 ms, status=4, confidence=97500\n  timestamp=1794505790, timezone=24, hrv=63 ms, status=4, confidence=86111\n  timestamp=1794506390, timezone=24, hrv=43 ms, status=4, confidence=84104\n2026-11-13:\n  timestamp=1794509690, timezone=24, hrv=70 ms, status=4, confidence=84482\n  timestamp=1794510590, timezone=24, hrv=42 ms, status=4, confidence=93939\n  timestamp=1794511190, timezone=24, hrv=49 ms, status=4, confidence=100000\n  timestamp=1794511790, timezone=24, hrv=56 ms, status=4, confidence=100000\n  timestamp=1794515390, timezone=24, hrv=76 ms, status=4, confidence=100000\n  timestamp=1794515990, timezone=24, hrv=81 ms, status=4, confidence=100000\n  timestamp=1794517190, timezone=24, hrv=96 ms, status=4, confidence=100000\n  timestamp=1794519290, timezone=24, hrv=69 ms, status=4, confidence=100000\n  timestamp=1794519890, timezone=24, hrv=87 ms, status=4, confidence=100000\n  timestamp=1794520490, timezone=24, hrv=114 ms, status=4, confidence=95454\n  timestamp=1794521090, timezone=24, hrv=110 ms, status=4, confidence=90909\n  timestamp=1794522590, timezone=24, hrv=107 ms, status=4, confidence=95833\n  timestamp=1794523190, timezone=24, hrv=74 ms, status=4, confidence=86206\n  timestamp=1794523790, timezone=24, hrv=95 ms, status=4, confidence=100000\n  timestamp=1794524390, timezone=24, hrv=67 ms, status=4, confidence=100000\n  timestamp=1794525290, timezone=24, hrv=67 ms, status=4, confidence=100000\n  timestamp=1794525890, timezone=24, hrv=64 ms, status=4, confidence=100000\n  timestamp=1794527690, timezone=24, hrv=111 ms, status=4, confidence=82857\n  timestamp=1794541190, timezone=24, hrv=30 ms, status=4, confidence=100000\n  timestamp=1794541490, timezone=24, hrv=34 ms, status=4, confidence=100000\n  timestamp=1794541790, timezone=24, hrv=42 ms, status=4, confidence=100000\n  timestamp=1794542990, timezone=24, hrv=24 ms, status=4, confidence=100000\n  timestamp=1794543890, timezone=24, hrv=66 ms, status=4, confidence=85000\n  timestamp=1794544790, timezone=24, hrv=34 ms, status=4, confidence=100000\n  timestamp=1794545990, timezone=24, hrv=69 ms, status=4, confidence=85321\n  timestamp=1794546290, timezone=24, hrv=43 ms, status=4, confidence=100000\n  timestamp=1794546890, timezone=24, hrv=59 ms, status=4, confidence=96875\n  timestamp=1794547190, timezone=24, hrv=43 ms, status=4, confidence=100000\n  timestamp=1794547790, timezone=24, hrv=65 ms, status=4, confidence=100000\n  timestamp=1794548990, timezone=24, hrv=70 ms, status=4, confidence=96666\n  timestamp=1794549890, timezone=24, hrv=108 ms, status=4, confidence=100000\n  timestamp=1794550190, timezone=24, hrv=80 ms, status=4, confidence=100000\n  timestamp=1794551390, timezone=24, hrv=124 ms, status=4, confidence=87500\n  timestamp=1794551990, timezone=24, hrv=55 ms, status=4, confidence=96428\n  timestamp=1794552590, timezone=24, hrv=57 ms, status=4, confidence=100000\n  timestamp=1794553190, timezone=24, hrv=46 ms, status=4, confidence=86084\n  timestamp=1794553790, timezone=24, hrv=63 ms, status=4, confidence=85344\n  timestamp=1794558290, timezone=24, hrv=27 ms, status=4, confidence=100000\n  timestamp=1794558890, timezone=24, hrv=43 ms, status=4, confidence=100000",
+  "sleepOverviewLast30Days": "Sleep Overview\n========================\nNote: each record below is dated by its wake-up day.\n\n2026-10-15\nSleep Score: 0\nSleep detail for this day is not available yet.\n\n2026-10-16\nSleep Score: 0\nSleep detail for this day is not available yet.\n\n2026-10-17\nSleep Score: 0\nSleep detail for this day is not available yet.\n\n2026-10-18\nSleep Score: 48\nDaily Sleep: 4h 30min (incl. naps)\nMain Sleep (asleep): 4h 30min\nMain Sleep Period (incl. awake): 4h 36min\nSleep metrics scope: daily\nDeep Sleep Ratio: 5%\nLight Sleep Ratio: 68%\nREM Ratio: 25%\nAwake Ratio: 2%\nAwake Time: 6 min\nAwake Count (>5 min): 0\nMain Sleep Window: 2026-10-18 09:07 - 2026-10-18 13:43\nNaps Total: 0 min\n\n2026-10-19\nSleep Score: 93\nDaily Sleep: 9h 38min (incl. naps)\nMain Sleep (asleep): 9h 38min\nMain Sleep Period (incl. awake): 9h 57min\nSleep metrics scope: daily\nDeep Sleep Ratio: 16%\nLight Sleep Ratio: 61%\nREM Ratio: 20%\nAwake Ratio: 3%\nAwake Time: 19 min\nAwake Count (>5 min): 0\nMain Sleep Window: 2026-10-19 00:27 - 2026-10-19 10:24\nNaps Total: 0 min\n\n2026-10-20\nSleep Score: 82\nDaily Sleep: 7h 54min (incl. naps)\nMain Sleep (asleep): 7h 54min\nMain Sleep Period (incl. awake): 8h 18min\nSleep metrics scope: daily\nDeep Sleep Ratio: 16%\nLight Sleep Ratio: 61%\nREM Ratio: 18%\nAwake Ratio: 5%\nAwake Time: 24 min\nAwake Count (>5 min): 1\nMain Sleep Window: 2026-10-20 03:20 - 2026-10-20 11:38\nNaps Total: 0 min\n\n2026-10-21\nSleep Score: 41\nDaily Sleep: 4h 46min (incl. naps)\nMain Sleep (asleep): 2h 47min\nMain Sleep Period (incl. awake): 3h 22min\nSleep metrics scope: daily\nDeep Sleep Ratio: 5%\nLight Sleep Ratio: 57%\nREM Ratio: 21%\nAwake Ratio: 17%\nAwake Time: 35 min\nAwake Count (>5 min): 1\nMain Sleep Window: 2026-10-21 09:31 - 2026-10-21 12:53\nNaps Total (asleep): 1h 59min\nNaps Period (incl. awake): 2h 6min\nNap Window: 2026-10-21 01:25 - 2026-10-21 03:31\n\n2026-10-22\nSleep Score: 0\nSleep detail for this day is not available yet.\n\n2026-10-23\nSleep Score: 0\nSleep detail for this day is not available yet.\n\n2026-10-24\nSleep Score: 69\nDaily Sleep: 5h 18min (incl. naps)\nMain Sleep (asleep): 5h 18min\nMain Sleep Period (incl. awake): 5h 27min\nSleep metrics scope: daily\nDeep Sleep Ratio: 19%\nLight Sleep Ratio: 59%\nREM Ratio: 19%\nAwake Ratio: 3%\nAwake Time: 9 min\nAwake Count (>5 min): 0\nMain Sleep Window: 2026-10-24 08:40 - 2026-10-24 14:07\nNaps Total: 0 min\n\n2026-10-25\nSleep Score: 86\nDaily Sleep: 8h 57min (incl. naps)\nMain Sleep (asleep): 8h 57min\nMain Sleep Period (incl. awake): 9h 46min\nSleep metrics scope: daily\nDeep Sleep Ratio: 15%\nLight Sleep Ratio: 51%\nREM Ratio: 26%\nAwake Ratio: 8%\nAwake Time: 49 min\nAwake Count (>5 min): 1\nMain Sleep Window: 2026-10-25 03:12 - 2026-10-25 12:58\nNaps Total: 0 min\n\n2026-10-26\nSleep detail for this day is not available yet.\n\n2026-10-27\nSleep Score: 74\nDaily Sleep: 9h 4min (incl. naps)\nMain Sleep (asleep): 4h 54min\nMain Sleep Period (incl. awake): 5h 0min\nSleep metrics scope: daily\nDeep Sleep Ratio: 13%\nLight Sleep Ratio: 57%\nREM Ratio: 28%\nAwake Ratio: 2%\nAwake Time: 6 min\nAwake Count (>5 min): 0\nMain Sleep Window: 2026-10-27 01:09 - 2026-10-27 06:09\nNaps Total (asleep): 4h 10min\nNaps Period (incl. awake): 5h 21min\nNap Window: 2026-10-27 07:41 - 2026-10-27 13:02\n\n2026-10-28\nSleep Score: 0\nSleep detail for this day is not available yet.\n\n2026-10-29\nSleep Score: 87\nDaily Sleep: 9h 58min (incl. naps)\nMain Sleep (asleep): 9h 58min\nMain Sleep Period (incl. awake): 10h 9min\nSleep metrics scope: daily\nDeep Sleep Ratio: 12%\nLight Sleep Ratio: 58%\nREM Ratio: 28%\nAwake Ratio: 2%\nAwake Time: 11 min\nAwake Count (>5 min): 0\nMain Sleep Window: 2026-10-29 02:37 - 2026-10-29 12:46\nNaps Total: 0 min\n\n2026-10-30\nSleep Score: -1\nDaily Sleep: 1h 10min (incl. naps)\nSleep metrics scope: daily\nNaps Total (asleep): 1h 10min\nNaps Period (incl. awake): 1h 12min\nNap Window: 2026-10-30 11:32 - 2026-10-30 12:27\nNap Window: 2026-10-30 14:57 - 2026-10-30 15:14\n\n2026-10-31\nSleep Score: 44\nDaily Sleep: 4h 12min (incl. naps)\nMain Sleep (asleep): 4h 12min\nMain Sleep Period (incl. awake): 4h 18min\nSleep metrics scope: daily\nDeep Sleep Ratio: 27%\nLight Sleep Ratio: 61%\nREM Ratio: 10%\nAwake Ratio: 2%\nAwake Time: 6 min\nAwake Count (>5 min): 0\nMain Sleep Window: 2026-10-30 21:52 - 2026-10-31 02:10\nNaps Total: 0 min\n\n2026-11-01\nSleep Score: 0\nSleep detail for this day is not available yet.\n\n2026-11-02\nSleep Score: 0\nSleep detail for this day is not available yet.\n\n2026-11-03\nSleep Score: 0\nSleep detail for this day is not available yet.\n\n2026-11-04\nSleep Score: 0\nSleep detail for this day is not available yet.\n\n2026-11-05\nSleep Score: 0\nSleep detail for this day is not available yet.\n\n2026-11-06\nSleep Score: 0\nSleep detail for this day is not available yet.\n\n2026-11-07\nSleep Score: -1\nDaily Sleep: 1h 7min (incl. naps)\nSleep metrics scope: daily\nNaps Total (asleep): 1h 7min\nNaps Period (incl. awake): 1h 10min\nNap Window: 2026-11-07 16:04 - 2026-11-07 17:14\n\n2026-11-08\nSleep Score: 70\nDaily Sleep: 7h 27min (incl. naps)\nMain Sleep (asleep): 7h 27min\nMain Sleep Period (incl. awake): 8h 19min\nSleep metrics scope: daily\nDeep Sleep Ratio: 16%\nLight Sleep Ratio: 45%\nREM Ratio: 29%\nAwake Ratio: 10%\nAwake Time: 52 min\nAwake Count (>5 min): 1\nMain Sleep Window: 2026-11-08 01:49 - 2026-11-08 10:08\nNaps Total: 0 min\n\n2026-11-09\nSleep Score: 80\nDaily Sleep: 10h 35min (incl. naps)\nMain Sleep (asleep): 10h 35min\nMain Sleep Period (incl. awake): 11h 20min\nSleep metrics scope: daily\nDeep Sleep Ratio: 15%\nLight Sleep Ratio: 55%\nREM Ratio: 23%\nAwake Ratio: 7%\nAwake Time: 45 min\nAwake Count (>5 min): 2\nMain Sleep Window: 2026-11-09 00:30 - 2026-11-09 11:50\nNaps Total: 0 min\n\n2026-11-10\nSleep Score: 73\nDaily Sleep: 11h 21min (incl. naps)\nMain Sleep (asleep): 11h 21min\nMain Sleep Period (incl. awake): 11h 56min\nSleep metrics scope: daily\nDeep Sleep Ratio: 17%\nLight Sleep Ratio: 60%\nREM Ratio: 18%\nAwake Ratio: 5%\nAwake Time: 35 min\nAwake Count (>5 min): 1\nMain Sleep Window: 2026-11-09 22:47 - 2026-11-10 10:43\nNaps Total: 0 min\n\n2026-11-11\nSleep Score: 0\nSleep detail for this day is not available yet.\n\n2026-11-12\nSleep Score: 83\nDaily Sleep: 9h 22min (incl. naps)\nMain Sleep (asleep): 9h 22min\nMain Sleep Period (incl. awake): 9h 39min\nSleep metrics scope: daily\nDeep Sleep Ratio: 10%\nLight Sleep Ratio: 54%\nREM Ratio: 33%\nAwake Ratio: 3%\nAwake Time: 17 min\nAwake Count (>5 min): 0\nMain Sleep Window: 2026-11-12 01:32 - 2026-11-12 11:11\nNaps Total: 0 min\n\n2026-11-13\nSleep Score: 66\nDaily Sleep: 6h 3min (incl. naps)\nMain Sleep (asleep): 4h 30min\nMain Sleep Period (incl. awake): 4h 38min\nSleep metrics scope: daily\nDeep Sleep Ratio: 16%\nLight Sleep Ratio: 63%\nREM Ratio: 18%\nAwake Ratio: 3%\nAwake Time: 8 min\nAwake Count (>5 min): 0\nMain Sleep Window: 2026-11-13 00:57 - 2026-11-13 05:35\nNaps Total (asleep): 1h 33min\nNaps Period (incl. awake): 2h 1min\nNap Window: 2026-11-13 10:56 - 2026-11-13 12:57",
+  "stressLast30Days": "Stress Level — Last 30 days\n========================\n\n2026-11-13:\nAverage Stress: 34\nRelaxed: No data\nLow: No data\nMedium: No data\nHigh: No data\n\n2026-11-12:\nAverage Stress: 22\nRelaxed: No data\nLow: No data\nMedium: No data\nHigh: No data\n\n2026-11-11:\nAverage Stress: 70\nRelaxed: No data\nLow: No data\nMedium: No data\nHigh: No data\n\n2026-11-10:\nAverage Stress: 17\nRelaxed: No data\nLow: No data\nMedium: No data\nHigh: No data\n\n2026-11-09:\nAverage Stress: 19\nRelaxed: No data\nLow: No data\nMedium: No data\nHigh: No data\n\n2026-11-08:\nAverage Stress: 20\nRelaxed: No data\nLow: No data\nMedium: No data\nHigh: No data\n\n2026-11-07:\nAverage Stress: 23\nRelaxed: No data\nLow: No data\nMedium: No data\nHigh: No data\n\n2026-11-06:\nAverage Stress: 75\nRelaxed: No data\nLow: No data\nMedium: No data\nHigh: No data\n\n2026-11-04:\nAverage Stress: 81\nRelaxed: No data\nLow: No data\nMedium: No data\nHigh: No data\n\n2026-11-02:\nAverage Stress: 74\nRelaxed: No data\nLow: No data\nMedium: No data\nHigh: No data\n\n2026-10-31:\nAverage Stress: 64\nRelaxed: No data\nLow: No data\nMedium: No data\nHigh: No data\n\n2026-10-30:\nAverage Stress: 34\nRelaxed: No data\nLow: No data\nMedium: No data\nHigh: No data\n\n2026-10-29:\nAverage Stress: 17\nRelaxed: No data\nLow: No data\nMedium: No data\nHigh: No data\n\n2026-10-28:\nAverage Stress: 55\nRelaxed: No data\nLow: No data\nMedium: No data\nHigh: No data\n\n2026-10-27:\nAverage Stress: 17\nRelaxed: No data\nLow: No data\nMedium: No data\nHigh: No data\n\n2026-10-25:\nAverage Stress: 12\nRelaxed: No data\nLow: No data\nMedium: No data\nHigh: No data\n\n2026-10-24:\nAverage Stress: 29\nRelaxed: No data\nLow: No data\nMedium: No data\nHigh: No data\n\n2026-10-23:\nAverage Stress: 30\nRelaxed: No data\nLow: No data\nMedium: No data\nHigh: No data\n\n2026-10-22:\nAverage Stress: 67\nRelaxed: No data\nLow: No data\nMedium: No data\nHigh: No data\n\n2026-10-21:\nAverage Stress: 46\nRelaxed: No data\nLow: No data\nMedium: No data\nHigh: No data\n\n2026-10-20:\nAverage Stress: 24\nRelaxed: No data\nLow: No data\nMedium: No data\nHigh: No data\n\n2026-10-19:\nAverage Stress: 12\nRelaxed: No data\nLow: No data\nMedium: No data\nHigh: No data\n\n2026-10-18:\nAverage Stress: 52\nRelaxed: No data\nLow: No data\nMedium: No data\nHigh: No data\n\n2026-10-17:\nAverage Stress: 16\nRelaxed: No data\nLow: No data\nMedium: No data\nHigh: No data\n\n2026-10-16:\nAverage Stress: 88\nRelaxed: No data\nLow: No data\nMedium: No data\nHigh: No data",
+  "dailyHealthLast30Days": "Daily Health Data — Last 30 days | Resting HR: 43 bpm | HRV Baseline: 42 ms\nNote: sleep entries are dated by their wake-up day.\n\n--- 20261015 ---\nSteps: 0 | Calories: 0 kcal | Exercise: 0 min\n\n--- 20261016 ---\nSteps: 16,652 | Calories: 1,463 kcal | Exercise: 1h 57min\nStress: Avg 88\n\n--- 20261017 ---\nSteps: 0 | Calories: 0 kcal | Exercise: 0 min\nStress: Avg 16\n\n--- 20261018 ---\nSteps: 30,763 | Calories: 2,300 kcal | Exercise: 3h 11min\nStress: Avg 52\nSleep Summary:\n  Total: 4h 36min | Deep: 13 min | Light: 3h 7min | REM: 1h 10min | Awake: 6 min\n  Sleep HR: Avg 57 bpm | Min 45 bpm | Max 74 bpm\n\n--- 20261019 ---\nSteps: 0 | Calories: 15 kcal | Exercise: 0 min\nStress: Avg 12\nSleep Summary:\n  Total: 9h 57min | Deep: 1h 33min | Light: 6h 5min | REM: 2h 0min | Awake: 19 min\n  Sleep HR: Avg 50 bpm | Min 37 bpm | Max 73 bpm\n\n--- 20261020 ---\nSteps: 12,390 | Calories: 955 kcal | Exercise: 1h 21min\nStress: Avg 24\nSleep Summary:\n  Total: 8h 18min | Deep: 1h 19min | Light: 5h 3min | REM: 1h 32min | Awake: 24 min\n  Sleep HR: Avg 50 bpm | Min 40 bpm | Max 67 bpm\n\n--- 20261021 ---\nSteps: 30,713 | Calories: 2,435 kcal | Exercise: 3h 30min\nStress: Avg 46\nSleep Summary:\n  Total: 2h 6min | Deep: 20 min | Light: 1h 7min | REM: 32 min | Awake: 7 min\n  Sleep HR: Avg 56 bpm | Min 45 bpm | Max 72 bpm\n\n--- 20261022 ---\nSteps: 12,471 | Calories: 1,013 kcal | Exercise: 1h 26min\nStress: Avg 67\n\n--- 20261023 ---\nSteps: 0 | Calories: 0 kcal | Exercise: 0 min\nStress: Avg 30\n\n--- 20261024 ---\nSteps: 17,255 | Calories: 1,390 kcal | Exercise: 1h 59min\nStress: Avg 29\nSleep Summary:\n  Total: 5h 27min | Deep: 1h 1min | Light: 3h 15min | REM: 1h 2min | Awake: 9 min\n  Sleep HR: Avg 49 bpm | Min 41 bpm | Max 68 bpm\n\n--- 20261025 ---\nSteps: 108 | Calories: 23 kcal | Exercise: 0 min\nStress: Avg 12\nSleep Summary:\n  Total: 9h 46min | Deep: 1h 27min | Light: 4h 58min | REM: 2h 33min | Awake: 48 min\n  Sleep HR: Avg 50 bpm | Min 40 bpm | Max 75 bpm\n\n--- 20261027 ---\nSteps: 459 | Calories: 49 kcal | Exercise: 0 min\nStress: Avg 17\nSleep Summary:\n  Total: 5h 0min | Deep: 40 min | Light: 2h 49min | REM: 1h 25min | Awake: 6 min\n  Sleep HR: Avg 52 bpm | Min 44 bpm | Max 64 bpm\n\n--- 20261028 ---\nSteps: 15,110 | Calories: 1,161 kcal | Exercise: 1h 24min\nStress: Avg 55\n\n--- 20261029 ---\nSteps: 593 | Calories: 48 kcal | Exercise: 0 min\nStress: Avg 17\nSleep Summary:\n  Total: 10h 9min | Deep: 1h 15min | Light: 5h 50min | REM: 2h 53min | Awake: 11 min\n  Sleep HR: Avg 52 bpm | Min 41 bpm | Max 64 bpm\n\n--- 20261030 ---\nSteps: 12,726 | Calories: 611 kcal | Exercise: 5 min\nStress: Avg 34\nSleep Summary:\n  Total: 55 min | Deep: 0 min | Light: 41 min | REM: 14 min | Awake: 0 min\n  Sleep HR: Avg 53 bpm | Min 48 bpm | Max 58 bpm\n\n--- 20261031 ---\nSteps: 44,304 | Calories: 4,828 kcal | Exercise: 5h 58min\nStress: Avg 64\nSleep Summary:\n  Total: 4h 18min | Deep: 1h 9min | Light: 2h 38min | REM: 25 min | Awake: 6 min\n  Sleep HR: Avg 52 bpm | Min 45 bpm | Max 67 bpm\n\n--- 20261101 ---\nSteps: 684 | Calories: 37 kcal | Exercise: 0 min\n\n--- 20261102 ---\nSteps: 13,978 | Calories: 1,088 kcal | Exercise: 1h 32min\nStress: Avg 74\n\n--- 20261103 ---\nSteps: 0 | Calories: 0 kcal | Exercise: 0 min\n\n--- 20261104 ---\nSteps: 9,823 | Calories: 746 kcal | Exercise: 1h 6min\nStress: Avg 81\n\n--- 20261105 ---\nSteps: 0 | Calories: 0 kcal | Exercise: 0 min\n\n--- 20261106 ---\nSteps: 52,189 | Calories: 4,703 kcal | Exercise: 6h 0min\nStress: Avg 75\n\n--- 20261107 ---\nSteps: 50 | Calories: 9 kcal | Exercise: 0 min\nStress: Avg 23\nSleep Summary:\n  Total: 1h 10min | Deep: 12 min | Light: 43 min | REM: 12 min | Awake: 3 min\n  Sleep HR: Avg 55 bpm | Min 43 bpm | Max 61 bpm\n\n--- 20261108 ---\nSteps: 228 | Calories: 44 kcal | Exercise: 0 min\nStress: Avg 20\nSleep Summary:\n  Total: 8h 19min | Deep: 1h 20min | Light: 3h 41min | REM: 2h 26min | Awake: 52 min\n  Sleep HR: Avg 50 bpm | Min 39 bpm | Max 68 bpm\n\n--- 20261109 ---\nSteps: 6,458 | Calories: 492 kcal | Exercise: 45 min\nStress: Avg 19\nSleep Summary:\n  Total: 11h 20min | Deep: 1h 40min | Light: 6h 20min | REM: 2h 35min | Awake: 45 min\n  Sleep HR: Avg 50 bpm | Min 40 bpm | Max 71 bpm\n\n--- 20261110 ---\nSteps: 9,524 | Calories: 687 kcal | Exercise: 1h 8min\nStress: Avg 17\nSleep Summary:\n  Total: 11h 56min | Deep: 1h 59min | Light: 7h 12min | REM: 2h 10min | Awake: 35 min\n  Sleep HR: Avg 47 bpm | Min 33 bpm | Max 63 bpm\n\n--- 20261111 ---\nSteps: 15,231 | Calories: 1,092 kcal | Exercise: 1h 42min\nStress: Avg 70\n\n--- 20261112 ---\nSteps: 6,950 | Calories: 258 kcal | Exercise: 1 min\nStress: Avg 22\nSleep Summary:\n  Total: 9h 39min | Deep: 1h 0min | Light: 5h 11min | REM: 3h 11min | Awake: 17 min\n  Sleep HR: Avg 47 bpm | Min 37 bpm | Max 72 bpm\n\n--- 20261113 ---\nSteps: 18,127 | Calories: 1,247 kcal | Exercise: 1h 51min\nStress: Avg 34\nSleep Summary:\n  Total: 4h 38min | Deep: 44 min | Light: 2h 56min | REM: 50 min | Awake: 8 min\n  Sleep HR: Avg 50 bpm | Min 41 bpm | Max 68 bpm"
 }
