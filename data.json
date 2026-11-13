@@ -5587,7 +5587,7 @@
       "5K": "29:29",
       "10K": "1:02:31",
       "halfMarathon": "2:22:29",
-      "marathon": "2:22:29"
+      "marathon": "5:06:10"
     }
   },
   "currentRecovery": {
@@ -6071,7 +6071,43 @@
       "maxBpm": 63
     }
   ],
-  "sleepHrvLast7Days": [],
+  "sleepHrvLast7Days": [
+    {
+      "date": "2026-11-13",
+      "averageMs": 78,
+      "status": "Normal",
+      "normalRangeMs": "72-94",
+      "baselineMs": 83
+    },
+    {
+      "date": "2026-11-12",
+      "averageMs": 90,
+      "status": "Normal",
+      "normalRangeMs": "71-95",
+      "baselineMs": 83
+    },
+    {
+      "date": "2026-11-10",
+      "averageMs": 99,
+      "status": "Above normal",
+      "normalRangeMs": "72-94",
+      "baselineMs": 83
+    },
+    {
+      "date": "2026-11-09",
+      "averageMs": 79,
+      "status": "Normal",
+      "normalRangeMs": "71-95",
+      "baselineMs": 83
+    },
+    {
+      "date": "2026-11-08",
+      "averageMs": 79,
+      "status": "Normal",
+      "normalRangeMs": "72-94",
+      "baselineMs": 83
+    }
+  ],
   "sleepOverviewLast30Days": [
     {
       "date": "2026-10-15",
