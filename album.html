@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Race album — Sahadat Hossain</title>
+  <meta name="description" content="Race photo album with results, legs and a photo timeline of race morning." />
+  <meta name="theme-color" content="#07090c" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preload" as="fetch" href="albums.json" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="album">
+
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="brand" aria-label="Home">
+        <span class="brand__mark">SH</span>
+        <span>Sahadat<span style="color:var(--blue-2)">.</span></span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" data-nav="profile"><span data-icon="runner"></span>Profile</a></li>
+        <li><a href="runs.html" data-nav="history"><span data-icon="list"></span>Run history</a></li>
+        <li><a href="index.html#season"><span data-icon="target"></span>Season</a></li>
+        <li><a href="gallery.html" data-nav="gallery"><span data-icon="grid"></span>Gallery</a></li>
+      </ul>
+      <a href="index.html#contact" class="btn btn--primary btn--magnetic">Get in touch <span data-icon="arrowRight"></span></a>
+      <button class="nav__toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="album-hero" id="albumHero">
+      <div class="album-hero__media"><img id="albumCover" src="" alt="" fetchpriority="high" /></div>
+      <div class="album-hero__rain" aria-hidden="true"></div>
+
+      <div class="container album-hero__top">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="gallery.html"><span data-icon="arrowLeft"></span>Gallery</a>
+          <span>/</span>
+          <span id="albumCrumb">Album</span>
+        </nav>
+      </div>
+
+      <div class="container album-hero__inner">
+        <div class="album-hero__grid">
+          <div class="album-hero__copy">
+            <span class="eyebrow" id="albumEyebrow">Race album</span>
+            <h1 class="display hero__title album-hero__title" id="albumTitle"></h1>
+            <div class="album-hero__chips" id="albumChips"></div>
+          </div>
+
+          <div class="album-result">
+            <div class="album-result__head">
+              <span class="label"><span data-icon="time"></span>Finish time</span>
+              <span class="album-result__status" id="albumStatus"></span>
+            </div>
+            <div class="album-result__clock" id="albumClock">0:00:00</div>
+            <div id="albumLegs"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= NUMBERS ================= -->
+    <section class="section"><div class="container">
+      <div class="section__head">
+        <div class="reveal">
+          <span class="eyebrow">Race result</span>
+          <h2 class="section-title">The<br /><em>numbers</em></h2>
+        </div>
+        <p class="lead reveal" data-delay="1" id="albumSummary"></p>
+      </div>
+      <div class="metric-grid" id="albumMetrics"></div>
+    </div></section>
+
+    <!-- ================= STORY ================= -->
+    <section class="section" style="padding-top:0"><div class="container">
+      <div class="section__head">
+        <div class="reveal">
+          <span class="eyebrow">Race story</span>
+          <h2 class="section-title">Leg by<br /><em>leg</em></h2>
+        </div>
+        <p class="lead reveal" data-delay="1">Tap a leg to see only its photos.</p>
+      </div>
+      <div class="stage-cards" id="stageCards"></div>
+
+      <article class="card morning-card reveal">
+        <div class="card__head">
+          <div>
+            <span class="label"><span data-icon="camera"></span>Race morning on camera</span>
+            <h3 class="card__title">When each photo was taken</h3>
+          </div>
+        </div>
+        <div id="morning"></div>
+        <p class="card-note" id="morningNote"></p>
+      </article>
+    </div></section>
+
+    <!-- ================= PHOTOS ================= -->
+    <section class="section" id="photos" style="padding-top:0"><div class="container">
+      <div class="section__head">
+        <div class="reveal">
+          <span class="eyebrow">Album</span>
+          <h2 class="section-title">Every<br /><em>frame</em></h2>
+        </div>
+        <div class="filters" id="filters" role="tablist" aria-label="Filter photos by leg"></div>
+      </div>
+      <div class="masonry masonry--album" id="masonry"></div>
+    </div></section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© 2026 Sahadat Hossain · Ultra Runner</span>
+      <a href="gallery.html" class="mono">← Back to gallery</a>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <div class="lightbox__bar">
+      <span class="label" id="lbCount">01 / 01</span>
+      <button class="icon-btn" id="lbClose" aria-label="Close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="lightbox__stage">
+      <button class="icon-btn lightbox__prev" id="lbPrev" aria-label="Previous photo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg>
+      </button>
+      <img id="lbImg" src="" alt="" />
+      <button class="icon-btn lightbox__next" id="lbNext" aria-label="Next photo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+      </button>
+    </div>
+    <div class="lightbox__caption">
+      <strong id="lbTitle"></strong>
+      <span class="label" id="lbMeta"></span>
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

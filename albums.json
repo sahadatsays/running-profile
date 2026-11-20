@@ -1,0 +1,60 @@
+{
+  "albums": [
+    {
+      "id": "dhaka-duathlon-2026",
+      "title": "Dhaka Duathlon 2026",
+      "sport": "Duathlon",
+      "date": "2026-11-18",
+      "location": "Dhaka, Bangladesh",
+      "presenter": "Akij Bicycle",
+      "conditions": "Rain",
+      "path": "assets/albums/dhaka-duathlon",
+      "cover": "dd-26",
+      "result": { "finishTime": "2:10:00", "status": "Finisher" },
+      "legs": [
+        { "key": "run1", "sport": "run", "label": "Run 1", "km": 5 },
+        { "key": "bike", "sport": "bike", "label": "Bike", "km": 30 },
+        { "key": "run2", "sport": "run", "label": "Run 2", "km": 5 }
+      ],
+      "stages": [
+        { "key": "run1", "label": "Run 1", "icon": "runner" },
+        { "key": "bike", "label": "Bike", "icon": "bike" },
+        { "key": "transition", "label": "Transition", "icon": "layers" },
+        { "key": "run2", "label": "Run 2", "icon": "runner" },
+        { "key": "finish", "label": "Finish", "icon": "medal" }
+      ],
+      "summary": "Run 5 km, ride 30 km, run 5 km — in steady rain on the roads around Dhaka. Wet tarmac on the bike, puddled village lanes on the final run, and a finisher medal at 2:10:00.",
+      "photos": [
+        { "file": "dd-01", "stage": "run1", "w": 800, "h": 533, "time": "06:10", "caption": "Opening 5K under the bridge", "alt": "Sahadat running the first 5 km beside another runner under a concrete bridge" },
+        { "file": "dd-02", "stage": "run1", "w": 800, "h": 533, "time": "06:10", "caption": "Settling into the first run", "alt": "Two runners in red race shirts on the opening run", "highlight": true },
+        { "file": "dd-03", "stage": "bike", "w": 800, "h": 533, "time": "06:38", "caption": "Aero on the wet expressway", "alt": "Sahadat riding low on the handlebars on a wet, empty expressway" },
+        { "file": "dd-04", "stage": "bike", "w": 800, "h": 533, "time": "06:38", "caption": "Head down in the rain", "alt": "Cycling through rain on a wide road lined with street lights" },
+        { "file": "dd-05", "stage": "bike", "w": 800, "h": 533, "time": "06:38", "caption": "Thirty kilometres of spray", "alt": "Head-on view of Sahadat cycling in the rain with a white helmet", "highlight": true },
+        { "file": "dd-06", "stage": "bike", "w": 800, "h": 533, "time": "06:38", "caption": "Holding the line", "alt": "Riding towards the camera on a rain-soaked road" },
+        { "file": "dd-07", "stage": "bike", "w": 800, "h": 1200, "caption": "Rolling past the marshals", "alt": "Cyclist passing race marshals on a grey morning" },
+        { "file": "dd-08", "stage": "bike", "w": 800, "h": 1200, "caption": "Low and focused", "alt": "Close view of Sahadat tucked over the bike" },
+        { "file": "dd-09", "stage": "bike", "w": 800, "h": 533, "time": "07:12", "caption": "Thumbs up at halfway", "alt": "Sahadat giving a thumbs up while cycling past yellow and black kerbs" },
+        { "file": "dd-10", "stage": "bike", "w": 800, "h": 533, "time": "07:12", "caption": "Still smiling on the bike", "alt": "Thumbs up from the bike on a palm-lined road", "highlight": true },
+        { "file": "dd-11", "stage": "bike", "w": 800, "h": 533, "time": "07:36", "caption": "Banana groves and wet tarmac", "alt": "Cycling past banana trees on a wet road" },
+        { "file": "dd-12", "stage": "bike", "w": 800, "h": 533, "time": "07:36", "caption": "Into the final stretch of the ride", "alt": "Sahadat riding past green banana plants" },
+        { "file": "dd-13", "stage": "bike", "w": 800, "h": 533, "time": "07:36", "caption": "Last kilometres on two wheels", "alt": "Cyclist leaning into the aero position" },
+        { "file": "dd-14", "stage": "bike", "w": 800, "h": 533, "time": "07:36", "caption": "Bringing the bike home", "alt": "Close-up of Sahadat on the bike with greenery behind" },
+        { "file": "dd-15", "stage": "bike", "w": 800, "h": 1200, "caption": "Through the village puddles", "alt": "Cycling through a puddled village road past a parked car" },
+        { "file": "dd-16", "stage": "transition", "w": 800, "h": 533, "caption": "Through the transition gate", "alt": "Athletes passing through the woven transition gate" },
+        { "file": "dd-17", "stage": "transition", "w": 800, "h": 533, "caption": "Racking the bike", "alt": "Sahadat hanging his bike on the transition rack" },
+        { "file": "dd-18", "stage": "run2", "w": 800, "h": 533, "time": "07:51", "caption": "Back on foot for the last 5K", "alt": "Sahadat running with a thumbs up on a wet road" },
+        { "file": "dd-19", "stage": "run2", "w": 800, "h": 533, "time": "07:51", "caption": "Legs remembering how to run", "alt": "Running on the final leg beside a concrete barrier" },
+        { "file": "dd-20", "stage": "run2", "w": 800, "h": 533, "time": "07:51", "caption": "All good out here", "alt": "Sahadat pointing and smiling at the camera on the second run", "highlight": true },
+        { "file": "dd-21", "stage": "run2", "w": 800, "h": 533, "time": "07:51", "caption": "Counting down the final kilometres", "alt": "Running towards the camera on the final leg" },
+        { "file": "dd-22", "stage": "run2", "w": 800, "h": 1200, "caption": "Past the Akij Bicycle stand", "alt": "Running through a village road past a blue kiosk" },
+        { "file": "dd-23", "stage": "run2", "w": 800, "h": 533, "time": "08:07", "caption": "Arms wide in the rain", "alt": "Sahadat running with arms spread wide on a flooded village lane" },
+        { "file": "dd-24", "stage": "run2", "w": 800, "h": 533, "time": "08:07", "caption": "Splashing through", "alt": "Running through puddles between palms" },
+        { "file": "dd-25", "stage": "run2", "w": 800, "h": 533, "time": "08:07", "caption": "Flying the last stretch", "alt": "Arms out wide on the wet lane" },
+        { "file": "dd-26", "stage": "run2", "w": 800, "h": 533, "time": "08:07", "caption": "Nearly home", "alt": "Sahadat with arms wide open running through a green, rain-soaked lane", "highlight": true, "focus": "center 35%" },
+        { "file": "dd-27", "stage": "run2", "w": 800, "h": 533, "time": "08:07", "caption": "Every step through the water", "alt": "Running with arms wide through puddles" },
+        { "file": "dd-28", "stage": "finish", "w": 800, "h": 1200, "caption": "Medal in the frame", "alt": "Sahadat with his medal inside the Dhaka Duathlon photo frame" },
+        { "file": "dd-29", "stage": "finish", "w": 800, "h": 533, "caption": "Finisher", "alt": "Sahadat standing in front of the Dhaka Duathlon Finisher board", "highlight": true }
+      ]
+    }
+  ]
+}

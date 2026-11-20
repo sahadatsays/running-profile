@@ -40,7 +40,8 @@ export const tooltip = {
 export function initNav() {
   const nav = $("#nav");
   if (!nav) return;
-  const page = document.body.dataset.page === "run" ? "history" : document.body.dataset.page;
+  const parent = { run: "history", album: "gallery" };
+  const page = parent[document.body.dataset.page] ?? document.body.dataset.page;
   $$("[data-nav]", nav).forEach((a) => a.classList.toggle("is-active", a.dataset.nav === page));
   const onScroll = () => nav.classList.toggle("is-scrolled", window.scrollY > 24);
   onScroll();
@@ -96,6 +97,27 @@ export function initCounters(root = document) {
       requestAnimationFrame(tick);
     }, 0.5);
   });
+}
+
+/* Race clock that counts up from 0:00:00 to a finish time */
+export function clockCounter(node, seconds, duration = 2200) {
+  if (!node) return;
+  const format = (s) => {
+    const t = Math.round(s);
+    return `${Math.floor(t / 3600)}:${String(Math.floor((t % 3600) / 60)).padStart(2, "0")}:${String(t % 60).padStart(2, "0")}`;
+  };
+  node.setAttribute("aria-label", format(seconds));
+  node.textContent = format(reduceMotion ? seconds : 0);
+  if (reduceMotion) return;
+  onVisible(node, () => {
+    const start = performance.now();
+    const tick = (now) => {
+      const p = Math.min((now - start) / duration, 1);
+      node.textContent = format(seconds * (1 - Math.pow(1 - p, 3)));
+      if (p < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  }, 0.4);
 }
 
 /* Rolling-digit odometer: every digit is a column of 0–9 that slides into place */

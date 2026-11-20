@@ -5,11 +5,12 @@ const PAGES = {
   profile: () => import("./js/pages/profile.js"),
   history: () => import("./js/pages/history.js"),
   run: () => import("./js/pages/run-detail.js"),
+  gallery: () => import("./js/pages/gallery.js"),
+  album: () => import("./js/pages/album.js"),
 };
 
 initNav();
 hydrateIcons();
-initGallery();
 
 const load = PAGES[document.body.dataset.page];
 
@@ -24,6 +25,7 @@ const load = PAGES[document.body.dataset.page];
     document.body.appendChild(notice);
   }
   hydrateIcons();
+  initGallery();
   observeReveals();
   initTilt();
   initMagnetic();

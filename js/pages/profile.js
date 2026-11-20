@@ -1,11 +1,18 @@
-import { loadActivityData } from "../data-service.js";
+import { loadActivityData, loadAlbums } from "../data-service.js";
+import { albumUrl, latestAlbum } from "../albums.js";
+import { legsBar } from "../album-view.js";
+import { icon } from "../icons.js";
 import { buildStats, fmt, tierOf } from "../stats.js";
 import * as charts from "../charts.js";
 import { cumulativeChart, radarChart, radialDays, roseChart } from "../creative-charts.js";
 import { runCard, runUrl } from "../run-card.js";
-import { $, $$, escapeHtml as esc, initCounters, initTimelineProgress, odometer } from "../ui.js";
+import { $, $$, clockCounter, escapeHtml as esc, initCounters, initTimelineProgress, odometer } from "../ui.js";
 
 export async function render() {
+  const event = renderEvent().catch((err) => {
+    console.warn("Race highlight unavailable", err);
+    $("#event").hidden = true;
+  });
   const stats = buildStats(await loadActivityData());
   bindText(textBindings(stats));
   bindCounts(countBindings(stats));
@@ -19,6 +26,53 @@ export async function render() {
   renderTimeline(stats);
   initCounters();
   initTimelineProgress();
+  await event;
+}
+
+/* =========================================================
+   Race highlight: newest album from albums.json
+   ========================================================= */
+async function renderEvent() {
+  const album = latestAlbum(await loadAlbums());
+  if (!album) {
+    $("#event").hidden = true;
+    return;
+  }
+  const url = albumUrl(album);
+  const [first, ...rest] = album.title.split(" ");
+  const others = album.highlights.filter((p) => p !== album.cover);
+  const tiles = [album.cover, ...others.slice(0, 5)];
+  const remaining = album.photos.length - tiles.length;
+
+  $("#eventEyebrow").textContent = `Race highlight · ${fmt.date(album.date)}`;
+  $("#eventTitle").innerHTML = `${esc(first)}<br /><em>${esc(rest.join(" "))}</em>`;
+  $("#eventLead").textContent = album.summary;
+  $("#eventStatus").innerHTML = `${icon("medal")}${esc(album.result.status)}`;
+  clockCounter($("#eventClock"), album.finishSeconds);
+  $("#eventLegs").innerHTML = legsBar(album);
+  $("#eventFacts").innerHTML = [
+    ["distance", `${album.totalKm} km`, "Total"],
+    ["speed", `${album.avgSpeed.toFixed(1)} km/h`, "Avg speed"],
+    ["rain", album.conditions, "Conditions"],
+    ["camera", `${album.photos.length}`, "Photos"],
+  ]
+    .filter(([, value]) => value)
+    .map(([name, value, label]) => `<li>${icon(name)}<span><b>${esc(value)}</b><small>${label}</small></span></li>`)
+    .join("");
+  $("#eventLink").href = url;
+  $("#eventLinkText").textContent = `Open album · ${album.photos.length} photos`;
+
+  $("#eventCollage").innerHTML = tiles
+    .map(
+      (p, i) => `
+    <a class="event__tile reveal" data-delay="${i}" href="${url}" style="--c:${p.color}">
+      <img src="${i === 0 ? p.full : p.thumb}" loading="lazy" width="${p.w}" height="${p.h}" alt="${esc(p.alt)}"
+           ${p.focus ? `style="object-position:${p.focus}"` : ""} />
+      <span class="shot__stage" style="--c:${p.color}">${esc(p.stageLabel)}</span>
+      ${i === tiles.length - 1 && remaining > 0 ? `<span class="event__more"><b>+${remaining}</b><small>more photos</small></span>` : ""}
+    </a>`
+    )
+    .join("");
 }
 
 const addDays = (d, n) => new Date(d.getFullYear(), d.getMonth(), d.getDate() + n);

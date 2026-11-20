@@ -12,6 +12,18 @@ export function loadActivityData(url = "data.json") {
   return activityCache;
 }
 
+let albumCache = null;
+
+export function loadAlbums(url = "albums.json") {
+  albumCache ??= fetch(url, { cache: "no-cache" }).then(async (res) => {
+    if (!res.ok) throw new Error(`Could not load ${url} (${res.status})`);
+    const data = await res.json();
+    if (!Array.isArray(data.albums)) throw new Error(`${url} has no "albums" array`);
+    return data.albums;
+  });
+  return albumCache;
+}
+
 /* routes/index.json lists the labelIds that have a routes/<labelId>.gpx file */
 async function routeManifest() {
   try {
